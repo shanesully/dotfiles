@@ -1,10 +1,18 @@
 " sos shitty vimrc
 syntax on
-" setup pathogen
-execute pathogen#infect()
-" generate helptags
-call pathogen#helptags() 
-filetype plugin indent on
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let vundle manage itself
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'morhetz/gruvbox'
+" All of your Plugins must be added before the following line
+call vundle#end() " required
+filetype plugin indent on " required
 " set default window size
 set lines=80 columns=200
 " search suck less
@@ -28,8 +36,6 @@ nore ; :
 nore , ;
 " gruvbox colorscheme in conjunction with backround=dark 
 colorscheme gruvbox
-" start nerdtree automatically
-autocmd vimenter * NERDTree
 set nostartofline
 " enable code folding
 set foldenable
@@ -73,12 +79,6 @@ set wildmode=longest:full
 set wildmenu
 " uncomment to highlight current line. not sure if i like this
 " set cul
-
-" if automatic commands working
-if has("autocmd")
-	" turn on filetype-specific auto-indentation
-	filetype plugin indent on
-endif
 
 " allow vimrc auto-reloading
 augroup reload_vimrc " {
