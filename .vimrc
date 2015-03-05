@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'morhetz/gruvbox'
+Plugin 'bling/vim-airline'
 " All of your Plugins must be added before the following line
 call vundle#end() " required
 filetype plugin indent on " required
