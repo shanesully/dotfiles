@@ -22,6 +22,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'msanders/cocoa.vim'
+Plugin 'toyamarinyon/vim-swift'
+Plugin 'L9'
 " All of your Plugins must be added before the following line
 call vundle#end() " required by vundle
 
