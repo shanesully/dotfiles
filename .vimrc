@@ -9,6 +9,9 @@ filetype plugin indent on
 set hlsearch
 set incsearch
 set showmatch
+" set font style and size
+set guifont=Menlo\ Regular:h10
+" case-insensitive default search
 set ignorecase
 set smartcase
 " tasteful indent
@@ -21,6 +24,7 @@ noremap Q <nop>
 " essential: huge productivity gains
 nore ; :
 nore , ;
+" gruvbox colorscheme in conjunction with backround=dark 
 colorscheme gruvbox
 " start nerdtree automatically
 autocmd vimenter * NERDTree
