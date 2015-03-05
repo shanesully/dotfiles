@@ -80,7 +80,8 @@ filetype plugin on
 filetype on
 " base auto-indentation behaviour on filetype
 filetype indent on
-f has("autocmd")
+
+if has("autocmd")
 	filetype plugin indent on
 endif
 
