@@ -17,6 +17,8 @@ set smartcase
 set softtabstop=4
 " line numbers
 set nu
+" get rid of ex mode forever
+noremap Q <nop>
 " no -n recursive, map keys
 " essential: huge productivity gains
 nore ; :
