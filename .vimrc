@@ -74,14 +74,9 @@ set wildmenu
 " uncomment to highlight current line. not sure if i like this
 " set cul
 
-" force filetype detection on
-filetype plugin on
-" detect the type of file you're editing
-filetype on
-" base auto-indentation behaviour on filetype
-filetype indent on
-
+" if automatic commands working
 if has("autocmd")
+	" turn on filetype-specific auto-indentation
 	filetype plugin indent on
 endif
 
