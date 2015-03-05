@@ -45,6 +45,8 @@ set foldenable
 " start airline 
 set laststatus=2
 set background=dark
+" no swap files
+set noswapfile
 " formatting option to enforce textwidth
 set formatoptions+=t
 " wrap lines on whitespace after 80 chars
