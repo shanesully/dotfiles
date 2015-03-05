@@ -4,8 +4,6 @@ syntax on
 execute pathogen#infect()
 " generate helptags
 call pathogen#helptags() 
-" include all plugins under ~/.vim/bundle
-call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 "search suck less
 set hlsearch
@@ -61,3 +59,8 @@ filetype plugin on
 if has("autocmd")
 	filetype plugin indent on
 endif
+
+augroup reload_vimrc " {
+	autocmd!
+	autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
