@@ -1,6 +1,6 @@
 "sos shitty vimrc
 syntax on
-" pathogen
+" setup pathogen
 execute pathogen#infect()
 call pathogen#helptags() "generate helptags
 filetype plugin indent on
@@ -11,28 +11,29 @@ set showmatch
 set ignorecase
 set smartcase
 "tasteful indent
-set tabstop=4
+set softtabstop=4
 "line numbers
 set nu
 "no -n recursive, map keys
 "essential: huge productivity gains
 nore ; :
 nore , ;
-colorscheme heroku
-"fixes most colorschemes
-set background=dark
+colorscheme vividchalk
 "start nerdtree automatically
 autocmd vimenter * NERDTree
 set nostartofline
+"enable code folding
+set foldenable
+set background=dark
+" enable airline
+set laststatus=2
 set textwidth=80
-set ruler
 set ai
 set shiftwidth=2
 set tabstop=4
 set showcmd
 set hidden
 set noautowrite
-set lazyredraw
 set nocompatible
 set autoindent smartindent
 set scrolloff=5
