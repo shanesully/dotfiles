@@ -1,18 +1,20 @@
 " sos shitty vimrc
 syntax on
-filetype off
+filetype off " required by vundle
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 " let vundle manage itself
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
 " All of your Plugins must be added before the following line
-call vundle#end() " required
+call vundle#end() " required by vundle
+
 filetype plugin indent on " required
 " set default window size
 set lines=80 columns=200
@@ -40,9 +42,9 @@ colorscheme gruvbox
 set nostartofline
 " enable code folding
 set foldenable
-set background=dark
-" enable airline
+" start airline 
 set laststatus=2
+set background=dark
 " formatting option to enforce textwidth
 set formatoptions+=t
 " wrap lines on whitespace after 80 chars
