@@ -5,7 +5,9 @@ execute pathogen#infect()
 " generate helptags
 call pathogen#helptags() 
 filetype plugin indent on
-"search suck less
+" set default window size
+set lines=80 columns=200
+" search suck less
 set hlsearch
 set incsearch
 set showmatch
