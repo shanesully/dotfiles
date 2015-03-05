@@ -36,36 +36,55 @@ set foldenable
 set background=dark
 " enable airline
 set laststatus=2
+" formatting option to enforce textwidth
+set formatoptions+=t
+" wrap lines on whitespace after 80 chars
 set textwidth=80
+" turn auto-indent on
 set ai
-set shiftwidth=2
+" setting for auto c-style indentation
+set shiftwidth=4
+" small tabs
 set tabstop=4
+" show commands as they're typed before execution
 set showcmd
+" allow hiding buffers even if they're unsaved
 set hidden
+" don't autosave buffers
 set noautowrite
+" better safe than sorry - force vi compatability off
 set nocompatible
+" 'modern' auto-indentation for c code
+set cindent
 set autoindent smartindent
 set scrolloff=5
+" short history
 set history=200
-set undolevels=1000
+" generous undo
+set undolevels =1000
 " do lots of scanning on tab completion
 set complete=.,w,b,u,U,t,i,d 
+" fast scrolling
 set ttyfast
+" no visual or fucking audible beep alerts
 set noerrorbells
 set ff=unix
 set wildmode=longest:full
 set wildmenu
-" uncomment to underline cursor line. not sure about it yet
+" uncomment to highlight current line. not sure if i like this
 " set cul
 
-filetype on
-filetype indent on
+" force filetype detection on
 filetype plugin on
-
-if has("autocmd")
+" detect the type of file you're editing
+filetype on
+" base auto-indentation behaviour on filetype
+filetype indent on
+f has("autocmd")
 	filetype plugin indent on
 endif
 
+" allow vimrc auto-reloading
 augroup reload_vimrc " {
 	autocmd!
 	autocmd BufWritePost $MYVIMRC source $MYVIMRC
