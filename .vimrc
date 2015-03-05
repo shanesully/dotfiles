@@ -38,7 +38,7 @@ noremap Q <nop>
 nore ; :
 nore , ;
 " gruvbox colorscheme in conjunction with backround=dark 
-colorscheme gruvbox
+colorscheme mopkai
 set nostartofline
 " enable code folding
 set foldenable
