@@ -21,7 +21,7 @@ set nu
 " essential: huge productivity gains
 nore ; :
 nore , ;
-colorscheme vividchalk
+colorscheme gruvbox
 " start nerdtree automatically
 autocmd vimenter * NERDTree
 set nostartofline
