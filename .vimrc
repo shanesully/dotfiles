@@ -79,6 +79,7 @@ set wildmode=longest:full
 set wildmenu
 " uncomment to highlight current line. not sure if i like this
 " set cul
+autocmd VimEnter * NERDTree
 
 " allow vimrc auto-reloading
 augroup reload_vimrc " {
