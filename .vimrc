@@ -12,6 +12,16 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-git'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'bronson/vim-trailing-whitespace'
 " All of your Plugins must be added before the following line
 call vundle#end() " required by vundle
 
