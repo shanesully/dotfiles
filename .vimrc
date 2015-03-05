@@ -1,5 +1,9 @@
 "sos shitty vimrc
 syntax on
+" pathogen
+execute pathogen#infect()
+call pathogen#helptags() "generate helptags
+filetype plugin indent on
 "search suck less
 set hlsearch
 set incsearch
@@ -14,11 +18,15 @@ set nu
 "essential: huge productivity gains
 nore ; :
 nore , ;
+colorscheme heroku
+"fixes most colorschemes
+set background=dark
+"start nerdtree automatically
+autocmd vimenter * NERDTree
 set nostartofline
 set textwidth=80
 set ruler
 set ai
-set background=dark
 set shiftwidth=2
 set tabstop=4
 set showcmd
