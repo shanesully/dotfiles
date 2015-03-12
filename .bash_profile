@@ -1,5 +1,6 @@
 # coloured output
 alias ls='ls -G'
+alias cl='clear'
 
 # set up git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
