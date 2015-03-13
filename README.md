@@ -1,1 +1,1 @@
-all unix confs. merge of old vimStuff repo.
+all unix confs. merged of old vimStuff repo.
