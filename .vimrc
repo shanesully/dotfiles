@@ -5,6 +5,8 @@ syntax on " obvious
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set tabstop=4
+" line-wrapping breaks aesthetic
+set nowrap
 
 " autoreload a file if it changes on disk
 set autoread
