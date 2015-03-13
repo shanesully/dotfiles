@@ -1,7 +1,18 @@
+" sweet plugin site
+" http://vimawesome.com/
+
 syntax on " obvious
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set tabstop=4
+
+" autoreload a file if it changes on disk
+set autoread
+" autoreload .vimrc changes 
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 
 colorscheme gruvbox
 set background=dark
@@ -46,7 +57,12 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 " one stop shop for vim colorschemes.
 Plugin 'flazz/vim-colorschemes'
+" best theme ever (y)
 Plugin 'morhetz/gruvbox'
+" obvious..
+Plugin 'bronson/vim-trailing-whitespace'
+" visual indent guides
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
