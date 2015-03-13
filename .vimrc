@@ -14,11 +14,12 @@ set tabstop=4
 
 " autoreload a file if it changes on disk
 set autoread
+" this works only without aliases
 " autoreload .vimrc changes
-augroup reload_vimrc " {
-    autocmd!
-    autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END " }
+"augroup reload_vimrc " {
+"    autocmd!
+"    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+"augroup END " }
 
 " alt indent guideline style
 " set ts=4 sw=4 et
