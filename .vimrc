@@ -16,6 +16,9 @@ set tabstop=4
 " line-wrapping breaks aesthetic
 " set nowrap
  
+" auto-indent lines
+set autoindent
+
 " better searching
 set hlsearch
 set incsearch
