@@ -12,6 +12,10 @@ filetype off                  " required
 set tabstop=4
 " line-wrapping breaks aesthetic
 " set nowrap
+ 
+" better searching
+set hlsearch
+set incsearch
 
 " autoreload a file if it changes on disk
 set autoread
