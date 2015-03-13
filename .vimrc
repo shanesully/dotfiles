@@ -38,6 +38,8 @@ Plugin 'bling/vim-airline'
 " A vim plugin which shows a git diff in the gutter (side column) and
 " stages/reverts hunks
 Plugin 'airblade/vim-gitgutter'
+" one stop shop for vim colorschemes.
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
