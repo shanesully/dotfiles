@@ -5,6 +5,8 @@
 command Nt NERDTree
 command DateMe r!date
 command Fws FixWhitespace
+command Vs vsplit
+command Hs split
 
 syntax on " obvious
 set nocompatible              " be iMproved, required
