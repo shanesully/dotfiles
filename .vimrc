@@ -3,6 +3,12 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set tabstop=4
 
+colorscheme gruvbox
+set background=dark
+if has('gui_running')
+  set guifont=ProggyTiny
+endif
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -40,6 +46,7 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 " one stop shop for vim colorschemes.
 Plugin 'flazz/vim-colorschemes'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
