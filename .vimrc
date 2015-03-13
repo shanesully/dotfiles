@@ -4,6 +4,7 @@
 " user aliases - they must start with uppercase
 command Nt NERDTree
 command DateMe r!date
+command Fws FixWhitespace
 
 syntax on " obvious
 set nocompatible              " be iMproved, required
