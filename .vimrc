@@ -7,6 +7,7 @@ command DateMe r!date
 command Fws FixWhitespace
 command Vs vsplit
 command Hs split
+command OpenCurr :silent !open %
 
 syntax on " obvious
 set nocompatible              " be iMproved, required
