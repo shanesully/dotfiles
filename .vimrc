@@ -1,6 +1,10 @@
 " sweet plugin site
 " http://vimawesome.com/
 
+" user aliases - they must start with uppercase
+command Nt NERDTree
+command DateMe r!date
+
 syntax on " obvious
 set nocompatible              " be iMproved, required
 filetype off                  " required
