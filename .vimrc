@@ -10,7 +10,7 @@ set tabstop=4
 
 " autoreload a file if it changes on disk
 set autoread
-" autoreload .vimrc changes 
+" autoreload .vimrc changes
 augroup reload_vimrc " {
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
@@ -71,6 +71,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 " visual indent guides
 Plugin 'nathanaelkane/vim-indent-guides'
 " legit pretty fast
+" invoke w/ '\\w'
 Plugin 'Lokaltog/vim-easymotion'
 
 " All of your Plugins must be added before the following line
