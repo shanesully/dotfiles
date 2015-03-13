@@ -16,6 +16,11 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
+" alt indent guideline style
+" set ts=4 sw=4 et
+" let g:indent_guides_start_level = 2
+" let g:indent_guides_guide_size = 1
+
 colorscheme gruvbox
 set background=dark
 if has('gui_running')
