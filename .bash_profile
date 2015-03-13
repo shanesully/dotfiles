@@ -1,6 +1,8 @@
 # coloured output
 alias ls='ls -G'
 alias cl='clear'
+# open location with finder
+alias finder='open -a Finder'
 
 # set up git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
