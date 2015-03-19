@@ -15,7 +15,7 @@ filetype off                  " required
 set tabstop=4
 " line-wrapping breaks aesthetic
 " set nowrap
- 
+
 " auto-indent lines
 set autoindent
 
@@ -37,9 +37,9 @@ set autoread
 " let g:indent_guides_start_level = 2
 " let g:indent_guides_guide_size = 1
 
-colorscheme gruvbox
 set background=dark
 if has('gui_running')
+  colorscheme gruvbox
   set guifont=ProggyTiny
 endif
 
@@ -71,8 +71,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " A tree explorer plugin for Vim.
 Plugin 'scrooloose/nerdtree'
-" Fuzzy file, buffer, mru, tag, etc finder
-Plugin 'kien/ctrlp.vim'
 " lean & mean status/tabline for vim that's light as air
 Plugin 'bling/vim-airline'
 " A vim plugin which shows a git diff in the gutter (side column) and
