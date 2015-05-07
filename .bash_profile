@@ -1,11 +1,14 @@
-# coloured output
+# Coloured output
 alias ls='ls -G'
 alias cl='clear'
+# Show and hide hidden files
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-# open location with finder
+# Open location with finder
 alias finder='open -a Finder'
 
-# set up git prompt
+# Set up git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
 	GIT_PROMPT_THEME=Default
 	source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
@@ -20,13 +23,13 @@ google() {
     open "http://www.google.com/search?q=$search"
 }
 
-# bash history section
+# Bash history section
 export HISTSIZE=10000
 
-# avoid duplicates
+# Avoid duplicates
 export HISTCONTROL=ignoredups:erasedups
 
-# append history entries
+# Append history entries
 shopt -s histappend
 
 # Save and reload history after each command
