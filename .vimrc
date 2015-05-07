@@ -37,12 +37,6 @@ set autoread
 " let g:indent_guides_start_level = 2
 " let g:indent_guides_guide_size = 1
 
-set background=dark
-if has('gui_running')
-  colorscheme gruvbox
-  set guifont=ProggyTiny
-endif
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -87,7 +81,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " legit pretty fast
 " invoke w/ '\\w'
 Plugin 'Lokaltog/vim-easymotion'
-" vim tmux support
+" Solarized dark
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

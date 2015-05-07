@@ -1,6 +1,7 @@
 # coloured output
 alias ls='ls -G'
 alias cl='clear'
+
 # open location with finder
 alias finder='open -a Finder'
 
@@ -10,10 +11,6 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
 	source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 
-# tmux auto-start
-# [[ $TERM != "screen" ]] && exec tmux
-
-# sweet terminal google search 
 google() {
     search=""
     echo "Googling: $@"
@@ -22,3 +19,15 @@ google() {
     done
     open "http://www.google.com/search?q=$search"
 }
+
+# bash history section
+export HISTSIZE=10000
+
+# avoid duplicates
+export HISTCONTROL=ignoredups:erasedups
+
+# append history entries
+shopt -s histappend
+
+# Save and reload history after each command
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
