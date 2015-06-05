@@ -4,6 +4,8 @@ alias cl='clear'
 # Show and hide hidden files
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+# Simple common program aliases
+alias vi='vim'
 
 # Open location with finder
 alias finder='open -a Finder'
