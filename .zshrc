@@ -1,19 +1,24 @@
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
+# Ignore duplicates in history
+setopt HIST_IGNORE_DUPS
 bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
 zstyle :compinstall filename '/Users/shaneosullivan/.zshrc'
+# Enable syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 autoload -U promptinit
-promptinit
-
+# Load autocompletion
 autoload -Uz compinit
+# Initialize autocompletion
 compinit
-# End of lines added by compinstall
+promptinit
 
 alias cl='clear'
 alias vi='vim'
+
+# Custom prompt
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%#"
+RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"

@@ -4,6 +4,7 @@ binaries=(
 	vim
 	git
 	zsh
+	zsh-syntax-highlighting
 	tmux
 	python
 	python3
