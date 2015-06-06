@@ -1,9 +1,10 @@
+syntax on
+
 " user aliases - they must start with uppercase
 command Vs vsplit
 command Hs split
 command OpenCurr :silent !open %
 
-syntax on
 set nocompatible
 filetype off
 set tabstop=4
