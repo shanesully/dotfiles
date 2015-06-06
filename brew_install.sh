@@ -2,14 +2,14 @@
 
 binaries=(
 	vim
-	bash
 	git
-	bash-git-prompt
+	zsh
 	tmux
 	python
 	python3
+	gcc
 	wget
 )
 
-echo "Installinf binaries..."
+echo "Installing binaries..."
 brew install ${binaries[@]}
