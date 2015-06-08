@@ -19,3 +19,6 @@ set incsearch
 " autoreload a file if it changes on disk
 set autoread
 set mouse=a
+
+" Dark theme compatability
+set background=dark
