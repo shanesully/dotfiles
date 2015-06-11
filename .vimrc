@@ -29,3 +29,6 @@ set mouse=a
 set background=dark
 colorscheme solarized
 set guifont=Source\ Code\ Pro
+
+" Show line numbers
+set nu
