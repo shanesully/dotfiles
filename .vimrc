@@ -32,6 +32,3 @@ set guifont=Source\ Code\ Pro
 
 " Show line numbers
 set nu
-
-" Default window size
-set lines=50 columns=150

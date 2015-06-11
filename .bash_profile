@@ -1,3 +1,6 @@
+# Color reporting for tmux
+export TERM="xterm-256color"
+
 # User aliases	
 
 alias ls='ls -G' # Coloured directory listings
