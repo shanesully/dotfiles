@@ -1,24 +1,31 @@
+" Detect the current file type
+filetype plugin on
+" Syntax highlighting
 syntax on
 
-" user aliases - they must start with uppercase
+" User aliases - They must start with uppercase
 command Vs vsplit
 command Hs split
 command OpenCurr :silent !open %
 
+" Disable Vi compatability
 set nocompatible
-filetype off
+" Tabs are four spaces
 set tabstop=4
 
-" auto-indent lines
+" Auto-indent lines
 set autoindent
 
-" better searching
+" Better searching
 set hlsearch
 set incsearch
 
-" autoreload a file if it changes on disk
+" Autoreload a file if it changes on disk
 set autoread
+" Allow mouse to set cursor position
 set mouse=a
 
-" Dark theme compatability
+" Theme settings
 set background=dark
+colorscheme solarized
+set guifont=Source\ Code\ Pro
