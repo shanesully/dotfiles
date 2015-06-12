@@ -6,6 +6,7 @@ command OpenCurr :silent !open %
 filetype plugin on " Detect the current file type
 syntax on " Syntax highlighting
 
+set term=screen-256color " Use 256 colors for terminal
 set guifont=Source\ Code\ Pro " Set font
 set background=dark " Theme settings
 colorscheme solarized
