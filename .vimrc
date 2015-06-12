@@ -3,6 +3,8 @@ command Vs vsplit
 command Hs split
 command OpenCurr :silent !open %
 
+execute pathogen#infect()
+
 filetype plugin indent on " Detect the current file type
 syntax on " Syntax highlighting
 
