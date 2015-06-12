@@ -3,16 +3,12 @@ command Vs vsplit
 command Hs split
 command OpenCurr :silent !open %
 
-execute pathogen#infect()
-
 filetype plugin indent on " Detect the current file type
 syntax on " Syntax highlighting
 
 set noswapfile " Disable swap files 
 set term=screen-256color " Use 256 colors for terminal
-set guifont=Source\ Code\ Pro " Set font
 set background=dark " Theme settings
-colorscheme solarized
 
 set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
