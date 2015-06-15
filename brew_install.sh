@@ -2,7 +2,8 @@
 
 # Currently no sublime-text3 package
 
-term=(
+# Commandline apps
+cmd=(
 	bash
 	git
 	bash-git-prompt
@@ -15,6 +16,7 @@ term=(
 	brew-cask
 )
 
+# Desktop gui apps
 gui=(
 	google-chrome
 	google-drive
@@ -26,10 +28,10 @@ gui=(
 	spectacle
 )
 
-echo "Installing cask..."
+echo "Tapping cask..."
 brew tap caskroom/cask
-echo "Installing terminal app..."
-brew install ${term[@]}
+echo "Installing commandline apps..."
+brew install ${cmd[@]}
 echo "Installing gui apps..."
 brew cask install ${gui[@]}
 echo "Setup complete."
