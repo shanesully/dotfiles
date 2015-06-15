@@ -6,6 +6,11 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect the current file type
 syntax on " Syntax highlighting
 
+" Vim auto-backup stuff
+set backup " Turn backup on
+set backupdir=~/.vim/backup " Much tidier
+set directory=~/.vim/tmp
+
 set noswapfile " Disable swap files 
 set term=screen-256color " Use 256 colors for terminal
 set background=dark " Theme settings
