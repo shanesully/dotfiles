@@ -2,7 +2,6 @@
 export TERM="xterm-256color"
 
 # User aliases	
-
 alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
 alias vi='vim'
@@ -12,7 +11,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # Open location with finder
-alias finder='open -a Finder'
+alias finder='open -a Finder' # Open target with Finder
 
 # Set up bash git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
@@ -21,7 +20,7 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
 fi
 
 # Terminal Google Search function
-# Syntax: $google cats
+# Syntax: $ google cats
 google() {
     search=""
     echo "Googling: $@"

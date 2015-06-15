@@ -9,6 +9,7 @@ syntax on " Syntax highlighting
 set noswapfile " Disable swap files 
 set term=screen-256color " Use 256 colors for terminal
 set background=dark " Theme settings
+colorscheme solarized " Solarized syntax theme - in .vim/colors
 
 set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
