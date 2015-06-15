@@ -10,10 +10,10 @@ set hidden " Hide unsaved buffers instead of closing them
 
 " Vim auto-backup stuff
 set backup " Turn backup on
-set backupdir=~/.vim/backup " Much tidier
-set directory=~/.vim/tmp
+set backupdir=~/.vim/.backup " Backup directory
+set directory=~/.vim/.swp " Swap directory
 
-set noswapfile " Disable swap files 
+set lazyredraw " Redrawn only when needed
 set term=screen-256color " Use 256 colors for terminal
 set background=dark " Theme settings
 colorscheme solarized " Solarized syntax theme - in .vim/colors
