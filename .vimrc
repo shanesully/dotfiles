@@ -18,6 +18,7 @@ set term=screen-256color " Use 256 colors for terminal
 set background=dark " Theme settings
 colorscheme solarized " Solarized syntax theme - in .vim/colors
 
+set ignorecase " Ignore search case by default
 set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
 set autoindent " Always set autoindenting on
