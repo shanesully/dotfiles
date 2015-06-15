@@ -23,6 +23,7 @@ gui=(
 	github
 	pycharm-ce
 	vlc
+	spectacle
 )
 
 echo "Installing cask..."
