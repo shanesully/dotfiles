@@ -6,6 +6,8 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect the current file type
 syntax on " Syntax highlighting
 
+set hidden " Hide unsaved buffers instead of closing them
+
 " Vim auto-backup stuff
 set backup " Turn backup on
 set backupdir=~/.vim/backup " Much tidier
@@ -21,6 +23,7 @@ set backspace=indent,eol,start " Allow backspacing over everything
 set autoindent " Always set autoindenting on
 set copyindent " Indent based on previous indent
 set showmatch " Show matching parens
+set visualbell 
 set noerrorbells " No beeping
 set history=1000 " Long history
 set undolevels=1000 " Long undo history 
