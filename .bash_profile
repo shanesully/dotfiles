@@ -8,7 +8,6 @@ alias cl='clear'
 alias vi='vim'
 
 # Show and hide hidden files on OS X
-
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
@@ -33,7 +32,7 @@ google() {
 }
 
 # Bash history section
-export HISTSIZE=10000
+export HISTSIZE=1000
 
 # Avoid duplicate entries
 export HISTCONTROL=ignoredups:erasedups
