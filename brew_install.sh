@@ -22,7 +22,6 @@ gui=(
 	google-drive
 	iterm2
 	evernote
-	github
 	pycharm-ce
 	vlc
 	spectacle
