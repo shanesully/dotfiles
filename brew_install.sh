@@ -24,7 +24,6 @@ gui=(
 	evernote
 	pycharm-ce
 	vlc
-	spectacle
 )
 
 echo "Tapping cask..."
