@@ -7,6 +7,7 @@ filetype plugin indent on " Detect the current file type
 syntax on " Syntax highlighting
 
 set hidden " Hide unsaved buffers instead of closing them
+set title " Append buffer to Terminal name
 
 " Vim auto-backup to specified directories
 set backup " Turn backup on
