@@ -6,6 +6,9 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect the current file type
 syntax on " Syntax highlighting
 
+" Effectively disable Ex Mode
+nnoremap Q <nop>
+
 set hidden " Hide unsaved buffers instead of closing them
 set title " Append buffer to Terminal name
 
