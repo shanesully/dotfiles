@@ -33,6 +33,7 @@ set noerrorbells " No audio beeping
 set history=1000 " Long history
 set undolevels=1000 " Long undo history 
 set tabstop=4 " Tabs are four spaces
+set shiftwidth=4 " Shift right or left four spaces
 set hlsearch " Highlight search results
 set incsearch " Incremental search - Highlight as you type
 set autoread " Auto-reload a file if it changes on disk
