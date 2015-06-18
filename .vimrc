@@ -11,13 +11,13 @@ nnoremap Q <nop>
 
 set hidden " Hide unsaved buffers instead of closing them
 set title " Append buffer to Terminal name
+set ruler " Show cursor positional info
 
 " Vim auto-backup to specified directories
 set backup " Turn backup on
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swap directory
 
-set lazyredraw " Redrawn the buffer only when needed
 set term=screen-256color " 256 color support for terminal
 set background=dark " Dark theme mode by default
 colorscheme solarized " Solarized syntax theme - Source: .vim/colors
