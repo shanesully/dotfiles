@@ -4,7 +4,7 @@
 " Lean config. Mostly just sensible defaults with
 " some aliases and cosmetics.
 "
-" Symlink to ~/.vimrc
+" Symlink to ~/.vimrc along with .vim dir
 "
 
 " User aliases - They must start with uppercase
@@ -30,6 +30,7 @@ colorscheme solarized " Solarized syntax theme - Source: .vim/colors
 if has("gui_running")
 	colorscheme molokai	
 	set guifont=Source\ Code\ Pro
+	set lines=60 columns=180 linespace=0
 endif
 
 set nu " Show line numbers
