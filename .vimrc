@@ -1,17 +1,22 @@
+" 
+" sully's vimrc
+"
+" Lean config. Mostly just sensible defaults with
+" some aliases and cosmetics.
+"
+" Symlink to ~/.vimrc
+"
+
 " User aliases - They must start with uppercase
-command Vs vsplit
-command Hs split
-command OpenCurr :silent !open %
+command Vs vsplit 
+command Hs split 
+command OpenCurr :silent !open % 
 
-filetype plugin indent on " Detect the current file type
-syntax on " Syntax highlighting
+filetype plugin indent on " Detect the current file type and appropriate indentation
+syntax on " Syntax highlighting on
 
-" Effectively disable Ex Mode
+" Remap 'Q' to nothing - Effectively disable Ex Mode
 nnoremap Q <nop>
-
-set hidden " Hide unsaved buffers instead of closing them
-set title " Append buffer to Terminal name
-set ruler " Show cursor positional info
 
 " Vim auto-backup to specified directories
 set backup " Turn backup on
@@ -19,9 +24,19 @@ set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swap directory
 
 set term=screen-256color " 256 color support for terminal
-set background=dark " Dark theme mode by default
+set background=dark " Dark theme support mode by default
 colorscheme solarized " Solarized syntax theme - Source: .vim/colors
 
+if has("gui_running")
+	colorscheme molokai	
+	set guifont=Source\ Code\ Pro
+endif
+
+set nu " Show line numbers
+set hidden " Hide unsaved buffers instead of closing them
+set title " Append buffer to Terminal name
+set ruler " Show cursor positional info
+set bs=2 " Backspaces quicker - delete 2 characters
 set ignorecase " Case-insensitive search
 set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
@@ -37,4 +52,3 @@ set shiftwidth=4 " Shift right or left four spaces
 set hlsearch " Highlight search results
 set incsearch " Incremental search - Highlight as you type
 set autoread " Auto-reload a file if it changes on disk
-set nu " Show line numbers
