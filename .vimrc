@@ -56,3 +56,4 @@ set incsearch " Incremental search - Highlight as you type
 set autoread " Auto-reload a file if it changes on disk
 set mouse=a " Allow mouse to change cursor position
 set mousehide  " Hide mouse when typing
+set foldenable " Enable source code folding
