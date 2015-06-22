@@ -54,3 +54,5 @@ set shiftwidth=4 " Shift right or left four spaces
 set hlsearch " Highlight search results
 set incsearch " Incremental search - Highlight as you type
 set autoread " Auto-reload a file if it changes on disk
+set mouse=a " Allow mouse to change cursor position
+set mousehide  " Hide mouse when typing
