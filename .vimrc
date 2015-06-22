@@ -15,6 +15,9 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect the current file type and appropriate indentation
 syntax on " Syntax highlighting on
 
+" Enable pathogen package(runtimepath) manager
+execute pathogen#infect()
+
 " Remap 'Q' to nothing - Effectively disable Ex Mode
 nnoremap Q <nop>
 
