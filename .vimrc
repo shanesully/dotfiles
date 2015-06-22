@@ -43,6 +43,7 @@ set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
 set autoindent " Always set autoindenting on
 set copyindent " Indent based on previous indent
+set lazyredraw " Redraw screen only when necessary
 set smartindent " Automatically guess and apply indentation
 set showmatch " Show matching parens
 set noerrorbells " No audio beeping
