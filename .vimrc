@@ -41,7 +41,7 @@ set nu " Show line numbers
 set hidden " Hide unsaved buffers instead of closing them
 set title " Append buffer to Terminal name
 set ruler " Show cursor positional info
-set bs=2 " Backspaces quicker - delete 2 characters
+set bs=2 " Backspace over line breaks
 set ignorecase " Case-insensitive search
 set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
@@ -61,3 +61,5 @@ set autoread " Auto-reload a file if it changes on disk
 set mouse=a " Allow mouse to change cursor position
 set mousehide  " Hide mouse when typing
 set foldenable " Enable source code folding
+set wildmenu " Use status line to show command completions
+set laststatus " Always show status line - Even with one window
