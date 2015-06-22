@@ -27,7 +27,11 @@ set term=screen-256color " 256 color support for terminal
 set background=dark " Dark theme support mode by default
 colorscheme solarized " Solarized syntax theme - Source: .vim/colors
 
-if has("gui_running")
+if has('mac')
+	set macmeta " Don't get special characters in place of meta
+endif
+
+if has ('gui_running')
 	colorscheme molokai	
 	set guifont=Source\ Code\ Pro
 	set lines=60 columns=180 linespace=0
