@@ -35,7 +35,7 @@ if has ('gui_running')
 	set guifont=Source\ Code\ Pro
 	set lines=60 columns=180 linespace=0
 else
-	set term=screen-256color " 256 color support for terminal
+	set term=screen-256color " Enable 256 color mode
 	set background=dark " Dark theme support mode by default
 	colorscheme solarized " Solarized syntax theme - Source: .vim/colors
 endif
