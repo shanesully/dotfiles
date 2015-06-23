@@ -26,10 +26,6 @@ set backup " Turn backup on
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swap directory
 
-set term=screen-256color " 256 color support for terminal
-set background=dark " Dark theme support mode by default
-colorscheme solarized " Solarized syntax theme - Source: .vim/colors
-
 if has('mac')
 	set macmeta " Don't get special characters in place of meta
 endif
@@ -38,6 +34,10 @@ if has ('gui_running')
 	colorscheme molokai	
 	set guifont=Source\ Code\ Pro
 	set lines=60 columns=180 linespace=0
+else
+	set term=screen-256color " 256 color support for terminal
+	set background=dark " Dark theme support mode by default
+	colorscheme solarized " Solarized syntax theme - Source: .vim/colors
 endif
 
 set nu " Show line numbers
@@ -54,8 +54,8 @@ set lazyredraw " Redraw screen only when necessary
 set smartindent " Automatically guess and apply indentation
 set showmatch " Show matching parens
 set noerrorbells " No audio beeping
-set history=1000 " Long history
-set undolevels=1000 " Long undo history 
+set history=1000 " Number of history items
+set undolevels=1000 " Number of undo items
 set tabstop=4 " Tabs are four spaces
 set shiftwidth=4 " Shift right or left four spaces
 set hlsearch " Highlight search results
