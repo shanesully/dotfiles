@@ -7,7 +7,11 @@
 " Symlink to ~/.vimrc along with .vim dir
 "
 
-set nocompatible " Disable Vi compatability
+" Disable Vi compatability
+" 
+"  - This should come first as it will effect other settings
+"
+set nocompatible 
 
 " User aliases - They must start with uppercase
 command Vs vsplit 
