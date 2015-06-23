@@ -7,6 +7,8 @@
 " Symlink to ~/.vimrc along with .vim dir
 "
 
+set nocompatible " Disable Vi compatability
+
 " User aliases - They must start with uppercase
 command Vs vsplit 
 command Hs split 
@@ -46,7 +48,6 @@ set title " Append buffer to Terminal name
 set ruler " Show cursor positional info
 set bs=2 " Backspace over line breaks
 set ignorecase " Case-insensitive search
-set nocompatible " Disable Vi compatability
 set backspace=indent,eol,start " Allow backspacing over everything
 set autoindent " Always set autoindenting on
 set copyindent " Indent based on previous indent
