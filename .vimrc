@@ -17,19 +17,19 @@ command Hs split
 command OpenCurr :silent !open % 
 
 " File and Syntax Settings
-filetype plugin indent on " Detect the current file type and appropriate indentation
-syntax on " Syntax highlighting on
+filetype plugin indent on " Detect the current file type and apply the appropriate indentation
+syntax on " Turn on syntax highlighting
 
-" Execute Pathogen - package ( runtimepath ) manager
+" Execute Pathogen ( runtimepath manager )
 execute pathogen#infect()
 
 " Remap 'Q' to nothing - Effectively disable Ex Mode
 nnoremap Q <nop>
 
 " Backup and Swap Settings
-set backup " Turn backup on
+set backup " Turn file backup on
 set backupdir=~/.vim/.backup " Set backup directory
-set directory=~/.vim/.swp " Set swap directory
+set directory=~/.vim/.swp " Set swapfile directory
 
 " OS-specific Settings
 if has('mac')
@@ -54,7 +54,7 @@ set ruler " Show cursor positional info
 set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
-set laststatus " Always show status line - Even with one window
+set laststatus " Always show status line ( Even with one window )
 set lazyredraw " Redraw screen only when necessary
 
 " Buffer settings
