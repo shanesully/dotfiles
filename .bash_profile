@@ -6,11 +6,14 @@ alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
 alias vi='vim'
 
-# Show and hide hidden files on OS X
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-
-alias finder='open -a Finder' # Open target with Finder
+# Mac-specific 
+if [ "$(uname)" == "Darwin" ]; then
+	# Show and hide hidden files on OS X
+	alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+	alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+	# Open target with Finder
+	alias finder='open -a Finder' 
+fi
 
 # Set up bash git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
