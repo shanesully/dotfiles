@@ -1,21 +1,22 @@
 " 
-" sully's vimrc
+" Wed Jun 24 15:57:54 IST 2015
+" 
+" sos vimrc
 "
-" Lean config. Mostly just sensible defaults with
-" some aliases and cosmetics.
+" Ideally lean conf with sensible( modern ) defaults and some cosmetics
 "
-" Symlink to ~/.vimrc along with .vim dir
+" Symlink to ~/ with .vim/
 "
 
-" Disable Vi compatability - Should be first
+" Disable Vi Compatability ( First and foremost )
 set nocompatible 
 
-" Aliases - Must start with uppercase
+" Aliases ( Must start with uppercase )
 command Vs vsplit 
 command Hs split 
 command OpenCurr :silent !open % 
 
-" File and syntax
+" File and Syntax Settings
 filetype plugin indent on " Detect the current file type and appropriate indentation
 syntax on " Syntax highlighting on
 
@@ -25,27 +26,26 @@ execute pathogen#infect()
 " Remap 'Q' to nothing - Effectively disable Ex Mode
 nnoremap Q <nop>
 
-" Backup and swap settings
+" Backup and Swap Settings
 set backup " Turn backup on
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swap directory
 
-" OS-specific settings
+" OS-specific Settings
 if has('mac')
 	set macmeta " Don't get special characters in place of meta
 endif
 
-" UI settings - Graphical
+" UI Settings - General
+set term=screen-256color " Enable 256 color mode
+set background=dark " Dark theme support mode by default
+colorscheme molokai " Solarized syntax theme - Source: .vim/colors
+set linespace=0 " No padding between lines
+
+" UI Settings - GUI-specific 
 if has ('gui_running')
-	colorscheme molokai	
-	set guifont=ProggyTiny
-	set lines=60 columns=180 linespace=0
-"
-" UI settings - Terminal
-else
-	set term=screen-256color " Enable 256 color mode
-	set background=dark " Dark theme support mode by default
-	colorscheme solarized " Solarized syntax theme - Source: .vim/colors
+	set guifont=ProggyTiny " Compact( tiny ), monospace font
+	set lines=60 columns=180 " Large window for desktop
 endif
 
 " Display settings
