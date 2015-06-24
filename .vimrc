@@ -3,7 +3,7 @@
 " 
 " sos vimrc
 "
-" Ideally lean conf with sensible( modern ) defaults and some cosmetics
+" Ideally lean conf with sensible ( modern ) defaults and some cosmetics
 "
 " Symlink to ~/ with .vim/
 "
@@ -20,7 +20,7 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect the current file type and appropriate indentation
 syntax on " Syntax highlighting on
 
-" Execute Pathogen - package(runtimepath) manager
+" Execute Pathogen - package ( runtimepath ) manager
 execute pathogen#infect()
 
 " Remap 'Q' to nothing - Effectively disable Ex Mode
@@ -44,7 +44,7 @@ set linespace=0 " No padding between lines
 
 " UI Settings - GUI-specific 
 if has ('gui_running')
-	set guifont=ProggyTiny " Compact( tiny ), monospace font
+	set guifont=ProggyTiny " Compact ( tiny ), monospace font
 	set lines=60 columns=180 " Large window for desktop
 endif
 
