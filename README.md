@@ -1,1 +1,6 @@
-all unix confs. merged old vimStuff repo.
+**Personal dotfiles**
+
+*Notes:*
+
+ - Symlink desired confs to ~/
+ - Remember to symlink both .vimrc and .vim/
