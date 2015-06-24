@@ -1,6 +1,6 @@
 **Personal dotfiles**
 
-*Notes:*
+Note:
 
- - Symlink desired confs to ~/
- - Remember to symlink both .vimrc and .vim/
+ - Symlink desired files to ~/
+ - Symlink both .vimrc and .vim/
