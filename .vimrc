@@ -11,7 +11,7 @@
 " Disable Vi Compatability(Before anything else)
 set nocompatible 
 
-" Aliases(Start with uppercase)
+" Aliases(Must start with uppercase)
 command Vs vsplit 
 command Hs split 
 command OpenCurr :silent !open % 
@@ -20,10 +20,10 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect the current file type and apply the appropriate indentation
 syntax on " Turn on syntax highlighting
 
-" Execute Pathogen ( runtimepath manager )
+" Execute Pathogen(runtimepath manager)
 execute pathogen#infect()
 
-" Remap 'Q' to nothing - Effectively disable Ex Mode
+" Remap 'Q' to nothing(Effectively disable Ex Mode)
 nnoremap Q <nop>
 
 " Backup and Swap Settings
@@ -55,7 +55,7 @@ set ruler " Show cursor positional info
 set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
-set laststatus " Always show status line ( Even with one window )
+set laststatus " Always show status line(Even with one window)
 set lazyredraw " Redraw screen only when necessary
 
 " Buffer settings
@@ -78,7 +78,7 @@ set copyindent " Indent based on previous indent
 
 " Search settings
 set hlsearch " Highlight search results
-set incsearch " Incremental search - Highlight as you type
+set incsearch " Incremental search(Highlight search results as you type)
 set ignorecase " Case-insensitive search
 set autoread " Auto-reload a file if it changes on disk
 
