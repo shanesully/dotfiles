@@ -3,15 +3,15 @@
 " 
 " sos vimrc
 "
-" Ideally lean conf with sensible ( modern ) defaults and some cosmetics
+" Lean conf with sensible defaults and some cosmetics
 "
 " Symlink to ~/ with .vim/
 "
 
-" Disable Vi Compatability ( First and foremost )
+" Disable Vi Compatability(Before anything else)
 set nocompatible 
 
-" Aliases ( Must start with uppercase )
+" Aliases(Start with uppercase)
 command Vs vsplit 
 command Hs split 
 command OpenCurr :silent !open % 
