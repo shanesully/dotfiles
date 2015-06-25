@@ -73,13 +73,13 @@ set colorcolumn=85 " Coloured column at 85 chars
 
 " Change statusline colour settings based on mode(fine)
 function! InsertStatuslineColor(mode)
-  if a:mode == 'i' " Insert Mode
-    hi statusline guibg=magenta
-  elseif a:mode == 'r' " Replace Mode
-    hi statusline guibg=blue
-  else
-    hi statusline guibg=red
-  endif
+	if a:mode == 'i' " Insert Mode
+		hi statusline guibg=magenta
+  	elseif a:mode == 'r' " Replace Mode
+		hi statusline guibg=blue
+ 	 else
+		hi statusline guibg=red
+  	endif
 endfunction
 
 au InsertEnter * call InsertStatuslineColor(v:insertmode)
