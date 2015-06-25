@@ -114,6 +114,7 @@ set hidden " Hide unsaved buffers instead of closing them
 set smartindent " Automatically guess and apply indentation
 set showmatch " Show matching parens
 set ttyfast " Faster scrolling
+set pastetoggle=<F10> " To disable autoindent for pasting
  
 " Error Settings
 set noerrorbells " No audio beeping
