@@ -71,23 +71,6 @@ set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
 set colorcolumn=85 " Coloured column at 85 chars
 
-" Change statusline colour settings based on mode(fine)
-function! InsertStatuslineColor(mode)
-	if a:mode == 'i' " Insert Mode
-		hi statusline guibg=magenta
-  	elseif a:mode == 'r' " Replace Mode
-		hi statusline guibg=blue
- 	 else
-		hi statusline guibg=red
-  	endif
-endfunction
-
-au InsertEnter * call InsertStatuslineColor(v:insertmode)
-au InsertChange * call InsertStatuslineColor(v:insertmode)
-au InsertLeave * hi statusline guibg=green
-
-" Default the statusline to green when entering Vim
-hi statusline guibg=green
 
 " UI Settings - GUI-specific 
 if has ('gui_running') 
@@ -96,6 +79,25 @@ if has ('gui_running')
 	set guifont=TerminusTTF:h12 " 12pt Terminus Monospace font
 	set noantialias " Turn off font antialiasing
 	set lines=60 columns=180 " Large window for desktop
+	
+	" Change statusline colour settings based on mode
+	function! InsertStatuslineColor(mode)
+		if a:mode == 'i'
+			hi statusline guibg=magenta
+	  	elseif a:mode == 'r'
+			hi statusline guibg=blue
+	  	else
+			hi statusline guibg=red
+	  	endif
+	endfunction
+
+	" Apply changes on mode switch
+	au InsertEnter * call InsertStatuslineColor(v:insertmode)
+	au InsertChange * call InsertStatuslineColor(v:insertmode)
+	au InsertLeave * hi statusline guibg=green
+
+	" Default the statusline to green when entering Vim
+	hi statusline guibg=green
 endif
 
 " Display Settings
