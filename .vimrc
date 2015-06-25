@@ -49,7 +49,7 @@ if has ('gui_running')
 	set lines=60 columns=180 " Large window for desktop
 endif
 
-" Display settings
+" Display Settings
 set nu " Show line numbers
 set ruler " Show cursor positional info
 set title " Append buffer to Terminal name
@@ -58,31 +58,31 @@ set wildmenu " Use status line to show command completions
 set laststatus " Always show status line(Even with one window)
 set lazyredraw " Redraw screen only when necessary
 
-" Buffer settings
+" Buffer Settings
 set hidden " Hide unsaved buffers instead of closing them
 set smartindent " Automatically guess and apply indentation
 set showmatch " Show matching parens
  
-" Error reporting
+" Error Settings
 set noerrorbells " No audio beeping
 
-" History settings
+" History Settings
 set history=1000 " Number of history items
 set undolevels=1000 " Number of undo items
 
-" Tab and indentation settings
+" Tab and Indentation Settings
 set tabstop=4 " Tabs are four spaces
 set shiftwidth=4 " Shift right or left four spaces
 set autoindent " Always set autoindenting on
 set copyindent " Indent based on previous indent
 
-" Search settings
+" Search Settings
 set hlsearch " Highlight search results
 set incsearch " Incremental search(Highlight search results as you type)
 set ignorecase " Case-insensitive search
 set autoread " Auto-reload a file if it changes on disk
 
-" Navigation
+" Navigation Settings
 set mouse=a " Allow mouse to change cursor position
 set mousehide  " Hide mouse when typing
 set bs=2 " Backspace over line breaks
