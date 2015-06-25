@@ -1,6 +1,9 @@
 # Color reporting for tmux
 export TERM="xterm-256color"
 
+# Vim mode
+set -o vi
+
 # User aliases	
 alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
