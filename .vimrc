@@ -85,7 +85,7 @@ if has ('gui_running')
 		if a:mode == 'i'
 			hi statusline guibg=magenta
 	  	elseif a:mode == 'r'
-			hi statusline guibg=blue
+			hi statusline guibg=yellow
 	  	else
 			hi statusline guibg=red
 	  	endif
