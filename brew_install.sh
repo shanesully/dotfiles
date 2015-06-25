@@ -1,17 +1,14 @@
 #!/bin/bash
 
-# Currently no sublime-text3 package
-
-# Commandline apps
+# Terminal apps
 cmd=(
 	bash
-	git
-	bash-git-prompt
 	vim
 	tmux
-	python
-	python3
+	git
 	gcc
+	bash-git-prompt
+	python
 	wget
 	brew-cask
 )
@@ -22,14 +19,16 @@ gui=(
 	google-drive
 	iterm2
 	evernote
-	pycharm-ce
 	vlc
 )
 
 echo "Tapping cask..."
 brew tap caskroom/cask
+
 echo "Installing commandline apps..."
 brew install ${cmd[@]}
+
 echo "Installing gui apps..."
 brew cask install ${gui[@]}
+
 echo "Setup complete."
