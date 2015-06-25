@@ -42,6 +42,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+set modelines=0 " Prevent modeline exploit
+let mapleader = "," " Remap leader
+
 " Backup and Swap Settings
 set backup " Turn file backup on
 set backupdir=~/.vim/.backup " Set backup directory
@@ -53,11 +56,16 @@ if has('mac')
 endif
 
 " UI Settings - General
+:au FocusLost * :set number " Absolute line numbering when not focused
+:au FocusGained * :set relativenumber " Relative line numbering when focused
 set shortmess+=I " Disable startup message
 set term=screen-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
 colorscheme molokai " Solarized syntax theme - Source: .vim/colors
 set linespace=0 " No padding between lines
+set cursorline " Highlight current line
+set textwidth=79 " 79 char text restriction
+set colorcolumn=85 " Coloured column at 85 chars
 
 " UI Settings - GUI-specific 
 if has ('gui_running')
@@ -72,6 +80,7 @@ set ruler " Show cursor positional info
 set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
+set wildmode=list:longest " Better wildmenu list
 set laststatus " Always show status line(Even with one window)
 set lazyredraw " Redraw screen only when necessary
 
@@ -79,6 +88,7 @@ set lazyredraw " Redraw screen only when necessary
 set hidden " Hide unsaved buffers instead of closing them
 set smartindent " Automatically guess and apply indentation
 set showmatch " Show matching parens
+set ttyfast " Faster scrolling
  
 " Error Settings
 set noerrorbells " No audio beeping
