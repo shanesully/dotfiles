@@ -1,9 +1,9 @@
 " 
-" Wed Jun 24 15:57:54 IST 2015
+" Thu Jun 25 16:38:12 IST 2015
 " 
 " sos vimrc
 "
-" Lean conf with sensible defaults and some cosmetics
+" Lean conf - Sensible defaults and themeing
 "
 " Symlink to ~/ with .vim/
 "
