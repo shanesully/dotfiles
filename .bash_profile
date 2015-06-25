@@ -15,10 +15,15 @@ if [ "$(uname)" == "Darwin" ]; then
 	alias finder='open -a Finder' 
 fi
 
-# Set up bash git prompt
+# Link to bash git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
 	GIT_PROMPT_THEME=Solarized
 	source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
+
+# Link to bash-completion
+ if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
 fi
 
 # Terminal Google Search function

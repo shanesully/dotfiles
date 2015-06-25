@@ -14,6 +14,7 @@ cmd=(
 	git
 	gcc
 	bash-git-prompt
+	bash-completion
 	python
 	wget
 	brew-cask
