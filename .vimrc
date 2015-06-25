@@ -23,8 +23,18 @@ syntax on " Turn on syntax highlighting
 " Execute Pathogen(runtimepath manager)
 execute pathogen#infect()
 
+" Remap colon to semicolon(Saves a keystroke with most commands)
+nnoremap ; :
+
 " Remap 'Q' to nothing(Effectively disable Ex Mode)
 nnoremap Q <nop>
+
+" Stop cursor jumping when joining lines
+nnoremap J mzJ`z
+
+" Center cursor after jumping
+nnoremap n nzz
+nnoremap } }zz
 
 " Backup and Swap Settings
 set backup " Turn file backup on
@@ -37,6 +47,7 @@ if has('mac')
 endif
 
 " UI Settings - General
+set shortmess+=I " Disable startup message
 set term=screen-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
 colorscheme molokai " Solarized syntax theme - Source: .vim/colors
@@ -65,6 +76,7 @@ set showmatch " Show matching parens
  
 " Error Settings
 set noerrorbells " No audio beeping
+set visualbell t_vb= " No visual beeping
 
 " History Settings
 set history=1000 " Number of history items
