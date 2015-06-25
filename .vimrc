@@ -49,11 +49,6 @@ set backup " Turn file backup on
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swapfile directory
 
-" OS-specific Settings
-if has('mac')
-	set macmeta " Don't get special characters in place of meta
-endif
-
 " UI Settings - General
 set nu " Enable line numbering
 " Realtive numbering in Normal Mode, absolute in Insert Mode
