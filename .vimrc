@@ -79,10 +79,13 @@ if has ('gui_running')
 	" Change statusline colour settings based on mode
 	function! InsertStatuslineColor(mode)
 		if a:mode == 'i'
+			" Insert Mode = Magenta
 			hi statusline guibg=magenta
 	  	elseif a:mode == 'r'
+	  		" Replace Mode = Yellow
 			hi statusline guibg=yellow
 	  	else
+	  		" Other = Red
 			hi statusline guibg=red
 	  	endif
 	endfunction
@@ -90,6 +93,7 @@ if has ('gui_running')
 	" Apply changes on mode switch
 	au InsertEnter * call InsertStatuslineColor(v:insertmode)
 	au InsertChange * call InsertStatuslineColor(v:insertmode)
+	" Normal Mode = Green
 	au InsertLeave * hi statusline guibg=green
 
 	" Default the statusline to green when entering Vim
