@@ -72,32 +72,9 @@ set colorcolumn=85 " Coloured column at 85 chars
 if has ('gui_running') 
 	" Only select a font if a GUI is running as it will inherit from the
 	" terminal emulator otherwise
-	set guifont=TerminusTTF:h12 " 12pt Terminus Monospace font
+	set guifont=TerminusTTF " Terminus Monospace font
 	set noantialias " Turn off font antialiasing
 	set lines=60 columns=180 " Large window for desktop
-	
-	" Change statusline colour settings based on mode
-	function! InsertStatuslineColor(mode)
-		if a:mode == 'i'
-			" Insert Mode = Magenta
-			hi statusline guibg=magenta
-	  	elseif a:mode == 'r'
-	  		" Replace Mode = Yellow
-			hi statusline guibg=yellow
-	  	else
-	  		" Other = Red
-			hi statusline guibg=red
-	  	endif
-	endfunction
-
-	" Apply changes on mode switch
-	au InsertEnter * call InsertStatuslineColor(v:insertmode)
-	au InsertChange * call InsertStatuslineColor(v:insertmode)
-	" Normal Mode = Green
-	au InsertLeave * hi statusline guibg=green
-
-	" Default the statusline to green when entering Vim
-	hi statusline guibg=green
 endif
 
 " Display Settings
