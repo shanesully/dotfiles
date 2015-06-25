@@ -70,8 +70,10 @@ set textwidth=79 " 79 char text restriction
 set colorcolumn=85 " Coloured column at 85 chars
 
 " UI Settings - GUI-specific 
-if has ('gui_running')
-	set guifont=TerminusTTF:h12 " Monospace programming font
+if has ('gui_running') 
+	" Only select a font if a GUI is running as it will inherit from the
+	" terminal emulator otherwise
+	set guifont=TerminusTTF:h12 " 12pt Terminus Monospace font
 	set noantialias " Turn off font antialiasing
 	set lines=60 columns=180 " Large window for desktop
 endif
