@@ -11,9 +11,10 @@
 " Disable Vi Compatability(Before anything else)
 set nocompatible 
 
-" Aliases(Must start with uppercase)
+" Aliases must start with uppercase
 command Vs vsplit 
 command Hs split 
+" Open current directory in $EDITOR
 command OpenCurr :silent !open % 
 
 " File and Syntax Settings
@@ -37,6 +38,7 @@ nnoremap n nzz
 nnoremap } }zz
 
 " Easy window navigation
+" CTRL + [MOTION]
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
