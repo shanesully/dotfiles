@@ -36,6 +36,12 @@ nnoremap J mzJ`z
 nnoremap n nzz
 nnoremap } }zz
 
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " Backup and Swap Settings
 set backup " Turn file backup on
 set backupdir=~/.vim/.backup " Set backup directory
