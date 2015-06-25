@@ -59,11 +59,9 @@ set textwidth=79 " 79 char text restriction
 set colorcolumn=85 " Coloured column at 85 chars
 
 if has ('gui_running') 
-	" Only select a font if a GUI is running as it will inherit from the
-	" terminal emulator otherwise
 	set guifont=TerminusTTF " Terminus Monospace font
-	set noantialias " Turn off font antialiasing
-	set lines=60 columns=180 " Large window for desktop
+	set noantialias " Font antialiasing
+	set lines=60 columns=180 " Window size
 endif
 
 set hidden " Hide unsaved buffers instead of closing them
