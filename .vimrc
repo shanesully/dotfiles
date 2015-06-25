@@ -44,8 +44,13 @@ set linespace=0 " No padding between lines
 
 " UI Settings - GUI-specific 
 if has ('gui_running')
+<<<<<<< HEAD
 	set guifont=TerminusTTF:h12 " Monospace programming font
 	set noantialias " Turn off font antialiasing
+=======
+	set guifont=ProggyTiny " Compact ( tiny ), monospace font
+	set noantialias " Don't antialias fonts
+>>>>>>> d260e57bc8840081a50755c8604506713c4adf95
 	set lines=60 columns=180 " Large window for desktop
 endif
 
