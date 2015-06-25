@@ -71,6 +71,24 @@ set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
 set colorcolumn=85 " Coloured column at 85 chars
 
+" Change statusline colour settings based on mode(fine)
+function! InsertStatuslineColor(mode)
+  if a:mode == 'i' " Insert Mode
+    hi statusline guibg=magenta
+  elseif a:mode == 'r' " Replace Mode
+    hi statusline guibg=blue
+  else
+    hi statusline guibg=red
+  endif
+endfunction
+
+au InsertEnter * call InsertStatuslineColor(v:insertmode)
+au InsertChange * call InsertStatuslineColor(v:insertmode)
+au InsertLeave * hi statusline guibg=green
+
+" Default the statusline to green when entering Vim
+hi statusline guibg=green
+
 " UI Settings - GUI-specific 
 if has ('gui_running') 
 	" Only select a font if a GUI is running as it will inherit from the
@@ -86,7 +104,7 @@ set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
 set wildmode=list:longest " Better wildmenu list
-set laststatus " Always show status line(Even with one window)
+set laststatus=2 " Always show status line(Even with one window)
 set lazyredraw " Redraw screen only when necessary
 
 " Buffer Settings
