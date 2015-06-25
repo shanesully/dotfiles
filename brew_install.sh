@@ -1,4 +1,10 @@
+#
+# Thu 25 Jun 2015 10:54:37 IST
+#
+# sos homebrew and cask install script
+#
 #!/bin/bash
+#
 
 # Terminal apps
 cmd=(
