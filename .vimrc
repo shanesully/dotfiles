@@ -56,8 +56,10 @@ if has('mac')
 endif
 
 " UI Settings - General
-:au FocusLost * :set number " Absolute line numbering when not focused
-:au FocusGained * :set relativenumber " Relative line numbering when focused
+set nu " Enable line numbering
+" Realtive numbering in Normal Mode, absolute in Insert Mode
+autocmd InsertEnter * silent! :set norelativenumber
+autocmd InsertLeave,BufNewFile,VimEnter * silent! :set relativenumber
 set shortmess+=I " Disable startup message
 set term=screen-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
@@ -75,7 +77,6 @@ if has ('gui_running')
 endif
 
 " Display Settings
-set nu " Show line numbers
 set ruler " Show cursor positional info
 set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
