@@ -26,13 +26,10 @@ execute pathogen#infect()
 
 " Remap colon to semicolon(Saves a keystroke with most commands)
 nnoremap ; :
-
 " Remap 'Q' to nothing(Effectively disable Ex Mode)
 nnoremap Q <nop>
-
 " Stop cursor jumping when joining lines
 nnoremap J mzJ`z
-
 " Center cursor after jumping
 nnoremap n nzz
 nnoremap } }zz
@@ -70,7 +67,6 @@ set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
 set colorcolumn=85 " Coloured column at 85 chars
-
 
 " UI Settings - GUI-specific 
 if has ('gui_running') 
