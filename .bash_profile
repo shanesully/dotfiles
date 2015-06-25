@@ -15,6 +15,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	alias finder='open -a Finder' 
 fi
 
+# Link git-completion
+source ~/git-completion.bash
+
 # Link to bash git prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
 	GIT_PROMPT_THEME=Solarized
