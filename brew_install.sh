@@ -24,8 +24,10 @@ gui=(
 	google-chrome
 	google-drive
 	iterm2
-	evernote
+	macvim
+	adobe-creative-cloud
 	vlc
+	evernote
 )
 
 echo "Tapping cask..."
