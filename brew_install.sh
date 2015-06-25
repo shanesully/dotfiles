@@ -26,7 +26,6 @@ gui=(
 	google-drive
 	iterm2
 	macvim
-	adobe-creative-cloud
 	vlc
 	evernote
 )

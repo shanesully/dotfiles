@@ -32,6 +32,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+let mapleader = "," " Remap leader
 set backup " Turn file backup on
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swapfile directory
@@ -40,14 +41,12 @@ set history=1000 " Number of history items
 set undolevels=1000 " Number of undo items
 
 set modelines=0 " Prevent modeline exploit
-let mapleader = "," " Remap leader
 set nu " Enable line numbering
 set ruler " Show cursor positional info
 set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
 set wildmode=list:longest " Better wildmenu list
-" set laststatus=2 " Always show status line(Even with one window)
 set lazyredraw " Redraw screen only when necessary
 set shortmess+=I " Disable startup message
 set term=screen-256color " Enable 256 color mode
@@ -56,13 +55,10 @@ colorscheme molokai " Solarized syntax theme - Source: .vim/colors
 set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
-set colorcolumn=85 " Coloured column at 85 chars
-
-if has ('gui_running') 
-	set guifont=TerminusTTF " Terminus Monospace font
-	set noantialias " Font antialiasing
-	set lines=60 columns=180 " Window size
-endif
+set colorcolumn=85 " Draw line length indicator
+set guifont=TerminusTTF " Terminus Monospace font
+set noantialias " Font antialiasing
+set lines=50 columns=160 " Window size
 
 set hidden " Hide unsaved buffers instead of closing them
 set smartindent " Automatically guess and apply indentation
