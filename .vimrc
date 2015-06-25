@@ -51,9 +51,6 @@ set directory=~/.vim/.swp " Set swapfile directory
 
 " UI Settings - General
 set nu " Enable line numbering
-" Realtive numbering in Normal Mode, absolute in Insert Mode
-autocmd InsertEnter * silent! :set norelativenumber
-autocmd InsertLeave,BufNewFile,VimEnter * silent! :set relativenumber
 set shortmess+=I " Disable startup message
 set term=screen-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
