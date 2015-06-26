@@ -16,6 +16,10 @@ syntax on " Syntax highlighting
 
 execute pathogen#infect()
 
+" <C-p> invokes CtrlP 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " Keystrokes-saver
 nnoremap ; :
 " Disable Ex Mode
