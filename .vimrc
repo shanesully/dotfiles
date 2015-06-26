@@ -21,6 +21,16 @@ execute pathogen#infect()
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" CtrlP ignores to speed up cacheing and startup
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
 " Remove a keystroke from Command Mode
 nnoremap ; :
 " Disable Ex Mode
@@ -59,7 +69,7 @@ set lazyredraw " Redraw screen only when necessary
 set shortmess+=I " Disable startup message
 set term=xterm-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
-colorscheme molokai " Solarized syntax theme - Source: .vim/colors
+colorscheme molokai " Molokai theme
 set laststatus=2 " Show statusline with current file
 set linespace=0 " No padding between lines
 set cursorline " Highlight current line
