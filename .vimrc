@@ -17,19 +17,19 @@ syntax on " Syntax highlighting
 " runtimepath manager
 execute pathogen#infect()
 
-" <C-p> invokes CtrlP 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-
-" Ignores to speed up CtrlP cacheing and startup
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
-
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+if exists(':CtrlP')
+    " <C-p> invokes CtrlP 
+    let g:ctrlp_map = '<c-p>'
+    let g:ctrlp_cmd = 'CtrlP'
+    
+    " Ignores to speed up CtrlP cacheing and startup
+    let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+    let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+      \ 'file': '\v\.(exe|so|dll)$',
+      \ 'link': 'some_bad_symbolic_links',
+      \ }
+endif
 
 " Remove a keystroke from Command Mode
 nnoremap ; :
@@ -40,7 +40,7 @@ nnoremap J mzJ`z
 " Center cursor after jump
 nnoremap n nzz
 nnoremap } }
-" Make Ctrl-T go to the next tab
+" Ctrl-T goes to next tab
 nmap <C-T> <ESC>:tabn<CR>
 
 " Easy window navigation
@@ -65,6 +65,7 @@ set title " Append buffer to Terminal name
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
 set wildmode=list:longest " Better wildmenu list
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux ignores
 set lazyredraw " Redraw screen only when necessary
 set shortmess+=I " Disable startup message
 set term=xterm-256color " Enable 256 color mode
