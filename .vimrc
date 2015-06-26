@@ -14,13 +14,14 @@ command OpenCurr :silent !open %
 filetype plugin indent on " Detect filetype and indentation
 syntax on " Syntax highlighting
 
+" runtimepath manager
 execute pathogen#infect()
 
 " <C-p> invokes CtrlP 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" Keystrokes-saver
+" Remove a keystroke from Command Mode
 nnoremap ; :
 " Disable Ex Mode
 nnoremap Q <nop>
