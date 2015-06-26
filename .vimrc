@@ -63,6 +63,7 @@ set laststatus=2 " Show statusline with current file
 set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
+set formatoptions+=t " Wrap text as close to 79 chars
 set colorcolumn=85 " Draw line length indicator
 set guifont=TerminusTTF:h12 " Terminus Monospace font
 set noantialias " Font antialiasing
