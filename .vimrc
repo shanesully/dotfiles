@@ -21,7 +21,7 @@ execute pathogen#infect()
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" CtrlP ignores to speed up cacheing and startup
+" Ignores to speed up CtrlP cacheing and startup
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
