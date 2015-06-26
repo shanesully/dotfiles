@@ -8,7 +8,7 @@ set nocompatible
 " Aliases must start with uppercase
 command Vs vsplit 
 command Hs split 
-" Open current directory in $EDITOR
+" Open current file with OS X default
 command OpenCurr :silent !open % 
 
 filetype plugin indent on " Detect filetype and indentation
@@ -16,7 +16,7 @@ syntax on " Syntax highlighting
 
 execute pathogen#infect()
 
-" Save keystrokes
+" Keystrokes-saver
 nnoremap ; :
 " Disable Ex Mode
 nnoremap Q <nop>
@@ -27,7 +27,6 @@ nnoremap n nzz
 nnoremap } }
 " Make Ctrl-T go to the next tab
 nmap <C-T> <ESC>:tabn<CR>
-
 
 " Easy window navigation
 map <C-h> <C-w>h
@@ -60,7 +59,7 @@ set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
 set colorcolumn=85 " Draw line length indicator
-set guifont=TerminusTTF " Terminus Monospace font
+set guifont=TerminusTTF:h12 " Terminus Monospace font
 set noantialias " Font antialiasing
 set lines=50 columns=160 " Window size
 
@@ -74,7 +73,6 @@ set pastetoggle=<F10> " To disable autoindent for pasting
  
 set noerrorbells " No audio beeping
 set visualbell t_vb= " No visual beeping
-
 
 set expandtab " Default to soft tab
 set tabstop=4 " Tabs are four spaces
