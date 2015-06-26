@@ -2,7 +2,7 @@
 " sos vimrc
 "
 
-" Disable Vi Compatability(Before anything else)
+" Disable Vi Compatability(First and foremost)
 set nocompatible 
 
 " Aliases must start with uppercase
@@ -24,7 +24,10 @@ nnoremap Q <nop>
 nnoremap J mzJ`z
 " Center cursor after jump
 nnoremap n nzz
-nnoremap } }zz
+nnoremap } }
+" Make Ctrl-T go to the next tab
+nmap <C-T> <ESC>:tabn<CR>
+
 
 " Easy window navigation
 map <C-h> <C-w>h
@@ -37,9 +40,10 @@ set backup " Turn file backup on
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swapfile directory
 
-set history=1000 " Number of history items
-set undolevels=1000 " Number of undo items
+set history=1000 " Lots of history 
+set undolevels=1000 " Lots of undo levels
 
+set splitright " vsplit right by default
 set modelines=0 " Prevent modeline exploit
 set nu " Enable line numbering
 set ruler " Show cursor positional info
@@ -71,6 +75,8 @@ set pastetoggle=<F10> " To disable autoindent for pasting
 set noerrorbells " No audio beeping
 set visualbell t_vb= " No visual beeping
 
+
+set expandtab " Default to soft tab
 set tabstop=4 " Tabs are four spaces
 set shiftwidth=4 " Shift right or left four spaces
 
@@ -81,5 +87,4 @@ set autoread " Auto-reload a file if it changes on disk
 
 set mouse=a " Allow mouse to change cursor position
 set mousehide  " Hide mouse when typing
-set bs=2 " Backspace over line breaks
-set backspace=indent,eol,start " Allow backspacing over everything
+set bs=2 " Allow backspacing over linebreak
