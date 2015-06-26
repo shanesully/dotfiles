@@ -8,14 +8,18 @@ set nocompatible
 " Aliases must start with uppercase
 command Vs vsplit 
 command Hs split 
-" Open current file with OS X default
-command OpenCurr :silent !open % 
 
 filetype plugin indent on " Detect filetype and indentation
 syntax on " Syntax highlighting
 
 " runtimepath manager
 execute pathogen#infect()
+
+" (Modern)Mac-specific 
+if has("macunix")
+    " Open current file with OS X default
+    command OpenCurr :silent !open % 
+endif
 
 if exists(':CtrlP')
     " <C-p> invokes CtrlP 
