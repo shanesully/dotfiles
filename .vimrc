@@ -52,9 +52,10 @@ set wildmenu " Use status line to show command completions
 set wildmode=list:longest " Better wildmenu list
 set lazyredraw " Redraw screen only when necessary
 set shortmess+=I " Disable startup message
-set term=screen-256color " Enable 256 color mode
+set term=xterm-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
 colorscheme molokai " Solarized syntax theme - Source: .vim/colors
+set laststatus=2 " Show statusline with current file
 set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
