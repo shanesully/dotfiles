@@ -96,7 +96,7 @@ set pastetoggle=<F10> " To disable autoindent for pasting
 set noerrorbells " No audio beeping
 set visualbell t_vb= " No visual beeping
 
-set expandtab " Default to soft tab
+set expandtab " Tabs to spaces
 set tabstop=4 " Tabs are four spaces
 set shiftwidth=4 " Shift right or left four spaces
 
