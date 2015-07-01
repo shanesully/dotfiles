@@ -35,6 +35,12 @@ if exists(':CtrlP')
       \ }
 endif
 
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
+endif
+
 " Remove a keystroke from Command Mode
 nnoremap ; :
 " Disable Ex Mode
@@ -70,18 +76,19 @@ set wildmenu " Use status line to show command completions
 set wildmode=list:longest " Better wildmenu list
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux ignores
 set lazyredraw " Redraw screen only when necessary
+set ttyfast " Faster scrolling
 set shortmess+=I " Disable startup message
 set term=xterm-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
-colorscheme molokai " Molokai theme
+colorscheme solarized " Solarized theme
 set laststatus=2 " Show statusline with current file
 set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
 set formatoptions+=t " Wrap text as close to 79 chars
 set colorcolumn=85 " Draw line length indicator
-set guifont=TerminusTTF:h12 " Terminus Monospace font
-set noantialias " Font antialiasing
+set anti enc=utf-8 " Encoding
+set guifont=Source\ Code\ Pro\ 11 " Monospace font
 set lines=50 columns=160 " Window size
 
 set hidden " Hide unsaved buffers instead of closing them
@@ -89,11 +96,9 @@ set smartindent " Automatically guess and apply indentation
 set autoindent " Always set autoindenting on
 set copyindent " Indent based on previous indent
 set showmatch " Show matching parens
-set ttyfast " Faster scrolling
 set pastetoggle=<F10> " To disable autoindent for pasting
 
 set noerrorbells " No audio beeping
-set visualbell t_vb= " No visual beeping
 
 set expandtab " Tabs to spaces
 set tabstop=4 " Tabs are four spaces
