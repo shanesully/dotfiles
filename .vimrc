@@ -89,7 +89,6 @@ set formatoptions+=t " Wrap text as close to 79 chars
 set colorcolumn=85 " Draw line length indicator
 set anti enc=utf-8 " Encoding
 set guifont=Source\ Code\ Pro\ 11 " Monospace font
-set lines=50 columns=160 " Window size
 
 set hidden " Hide unsaved buffers instead of closing them
 set smartindent " Automatically guess and apply indentation
