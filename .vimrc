@@ -54,6 +54,7 @@ nnoremap } }
 nmap <C-T> <ESC>:tabn<CR>
 
 " Easy window navigation
+" <C-w> + [DIRECTION]
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
