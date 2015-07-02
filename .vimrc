@@ -87,6 +87,7 @@ set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set textwidth=79 " 79 char text restriction
 set formatoptions+=t " Wrap text as close to 79 chars
+set linebreak " Soft-wrap: Don't break words
 set colorcolumn=85 " Draw line length indicator
 set anti enc=utf-8 " Encoding
 set guifont=Source\ Code\ Pro\ 11 " Monospace font
