@@ -101,8 +101,8 @@ set pastetoggle=<F10> " To disable autoindent for pasting
 
 set noerrorbells " No audio beeping
 
-set expandtab " Tabs to spaces
-set tabstop=4 " Tabs are four spaces
+set expandtab " Convert tabs to...
+set tabstop=4 " ... Four spaces
 set shiftwidth=4 " Shift right or left four spaces
 
 set hlsearch " Highlight search results
