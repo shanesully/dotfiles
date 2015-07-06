@@ -80,7 +80,7 @@ set shortmess+=I " Disable startup message
 set term=xterm-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
 colorscheme solarized " Solarized theme
-set laststatus=2 " Show statusline with current file
+" set laststatus=2 " Show statusline with current file
 set linespace=0 " No padding between lines
 set cursorline " Highlight current line
 set formatoptions+=t " Wrap text as close to 79 chars
