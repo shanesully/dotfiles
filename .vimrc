@@ -27,7 +27,6 @@ if exists(':CtrlP')
     let g:ctrlp_cmd = 'CtrlP'
 
     " Ignores to speed up CtrlP cacheing and startup
-    let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
     let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]\.(git|hg|svn)$',
       \ 'file': '\v\.(exe|so|dll)$',
