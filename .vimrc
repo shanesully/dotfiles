@@ -1,6 +1,4 @@
-"
 " sos vimrc
-"
 
 " Disable Vi Compatability(First and foremost)
 set nocompatible
@@ -34,12 +32,6 @@ if exists(':CtrlP')
       \ }
 endif
 
-if &term =~ '256color'
-    " Disable Background Color Erase (BCE) so that color schemes
-    " work properly when Vim is used inside tmux and GNU screen.
-    set t_ut=
-endif
-
 " Disable Ex Mode
 nnoremap Q <nop>
 " Stop cursor jumping when joining lines
@@ -47,8 +39,6 @@ nnoremap J mzJ`z
 " Center cursor after jump
 nnoremap n nzz
 nnoremap } }
-" Ctrl-T goes to next tab
-nmap <C-T> <ESC>:tabn<CR>
 
 " Easy window navigation
 " <C-w> + [DIRECTION]
@@ -79,32 +69,30 @@ set shortmess+=I " Disable startup message
 set term=xterm-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
 colorscheme solarized " Solarized theme
-" set laststatus=2 " Show statusline with current file
 set linespace=0 " No padding between lines
-set cursorline " Highlight current line
-set formatoptions+=t " Wrap text as close to 79 chars
+set cursorline " Highlight the current line
 set linebreak " Soft-wrap: Don't break words
 set anti enc=utf-8 " Encoding
 set guifont=Source\ Code\ Pro\ 11 " Monospace font
 
 set hidden " Hide unsaved buffers instead of closing them
-set smartindent " Automatically guess and apply indentation
-set autoindent " Always set autoindenting on
-set copyindent " Indent based on previous indent
+set smartindent " Guess indentation settings
+set autoindent " Indent automatically
+set copyindent " Indent using previous settings
 set showmatch " Show matching parens
 set pastetoggle=<F10> " To disable autoindent for pasting
 
 set noerrorbells " No audio beeping
 
-set expandtab " Convert tabs to...
-set tabstop=4 " ... Four spaces
-set shiftwidth=4 " Shift right or left four spaces
+set expandtab " Convert tabs to spaces  
+set tabstop=4 " Tabs are four spaces
+set shiftwidth=4 " Shift moves four spaces
 
 set hlsearch " Highlight search results
-set incsearch " Incremental search(Highlight search results as you type)
+set incsearch " Incremental search(Highlight results as you type)
 set ignorecase " Case-insensitive search
-set autoread " Auto-reload a file if it changes on disk
+set autoread " Reload a file if it changes on disk
 
 set mouse=a " Allow mouse to change cursor position
-set mousehide  " Hide mouse when typing
-set bs=2 " Allow backspacing over linebreak
+set mousehide  " Hide the cursor when typing
+set bs=2 " Backspace can move over newlines
