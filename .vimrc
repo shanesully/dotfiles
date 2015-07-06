@@ -56,9 +56,11 @@ set history=1000 " Lots of history
 set undolevels=1000 " Lots of undo levels
 
 set splitright " vsplit right by default
+set splitbelow " split down by default
 set modelines=0 " Prevent modeline exploit
 set nu " Enable line numbering
-set ruler " Show cursor positional info
+set ruler " Display cursor position info
+set showcmd " Display info about current command
 set foldenable " Enable source code folding
 set wildmenu " Use status line to show command completions
 set wildmode=list:longest " Better wildmenu list
