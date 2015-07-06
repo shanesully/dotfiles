@@ -68,30 +68,31 @@ set ttyfast " Faster scrolling
 set shortmess+=I " Disable startup message
 set term=xterm-256color " Enable 256 color mode
 set background=dark " Dark theme support mode by default
-colorscheme solarized " Solarized theme
 set linespace=0 " No padding between lines
 set cursorline " Highlight the current line
 set linebreak " Soft-wrap: Don't break words
 set anti enc=utf-8 " Encoding
+set autoread " Reload a file if it changes on disk
+set hidden " Hide unsaved buffers instead of closing them
+
+set noerrorbells " No audio beeping
+
+colorscheme solarized " Solarized theme
 set guifont=Source\ Code\ Pro\ 11 " Monospace font
 
-set hidden " Hide unsaved buffers instead of closing them
 set smartindent " Guess indentation settings
 set autoindent " Indent automatically
 set copyindent " Indent using previous settings
 set showmatch " Show matching parens
 set pastetoggle=<F10> " To disable autoindent for pasting
 
-set noerrorbells " No audio beeping
+set hlsearch " Highlight search results
+set incsearch " Incremental search(Highlight results as you type)
+set ignorecase " Case-insensitive search
 
 set expandtab " Convert tabs to spaces  
 set tabstop=4 " Tabs are four spaces
 set shiftwidth=4 " Shift moves four spaces
-
-set hlsearch " Highlight search results
-set incsearch " Incremental search(Highlight results as you type)
-set ignorecase " Case-insensitive search
-set autoread " Reload a file if it changes on disk
 
 set mouse=a " Allow mouse to change cursor position
 set mousehide " Hide the cursor when typing
