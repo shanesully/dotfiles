@@ -40,7 +40,7 @@ nnoremap J mzJ`z
 nnoremap n nzz
 nnoremap } }
 
-" Easy window navigation
+" tmux-like split pane navigation
 " <C-w> + [DIRECTION]
 map <C-h> <C-w>h
 map <C-j> <C-w>j
