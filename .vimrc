@@ -41,8 +41,6 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-" Remove a keystroke from Command Mode
-nnoremap ; :
 " Disable Ex Mode
 nnoremap Q <nop>
 " Stop cursor jumping when joining lines
