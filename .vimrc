@@ -40,7 +40,7 @@ nnoremap J mzJ`z
 nnoremap n nzz
 nnoremap } }
 
-" tmux-like split pane navigation
+" tmux-like split navigation
 " <C-w> + [DIRECTION]
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -94,5 +94,5 @@ set ignorecase " Case-insensitive search
 set autoread " Reload a file if it changes on disk
 
 set mouse=a " Allow mouse to change cursor position
-set mousehide  " Hide the cursor when typing
+set mousehide " Hide the cursor when typing
 set bs=2 " Backspace can move over newlines
