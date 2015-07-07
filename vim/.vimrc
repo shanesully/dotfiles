@@ -104,6 +104,7 @@ set cursorline " Highlight the current line
 set linebreak " Soft-wrap: Don't break words
 set encoding=utf8 " Encoding
 set autoread " Reload a file if it changes on disk
+set autowrite " Automatically :write before running commands
 set hidden " Hide unsaved buffers instead of closing them
 
 set noerrorbells " No audio beeping
