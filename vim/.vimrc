@@ -109,6 +109,9 @@ set hidden " Hide unsaved buffers instead of closing them
 
 set noerrorbells " No audio beeping
 
+" set textwidth=79 " Wrap text at 79 chars
+" set colorcolumn=+1 " Color the next column(column 80)
+
 set guifont=Source\ Code\ Pro " Monospace font
 
 set smartindent " Guess indentation settings
