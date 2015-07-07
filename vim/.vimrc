@@ -123,3 +123,5 @@ set shiftwidth=4 " Shift moves four spaces
 
 set mousehide " Hide the cursor when typing
 set backspace=indent,eol,start " Backspace over everything in Insert Mode
+
+set diffopt+=vertical " Always use vertical diffs
