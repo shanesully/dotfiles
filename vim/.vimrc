@@ -77,7 +77,7 @@ vnoremap < <gv
 vnoremap > >gv 
 
 " tmux-like split navigation
-" <C-w> + [DIRECTION]
+" <C-w> + [STANDARD VIM DIRECTIONAL KEY]
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
