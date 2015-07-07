@@ -72,6 +72,10 @@ nnoremap J mzJ`z
 nnoremap n nzz
 nnoremap } }
 
+" Better indentation
+vnoremap < <gv 
+vnoremap > >gv 
+
 " tmux-like split navigation
 " <C-w> + [DIRECTION]
 map <C-h> <C-w>h
