@@ -120,6 +120,5 @@ set expandtab " Convert tabs to spaces
 set tabstop=4 " Tabs are four spaces
 set shiftwidth=4 " Shift moves four spaces
 
-set mouse=a " Allow mouse to change cursor position
 set mousehide " Hide the cursor when typing
 set backspace=indent,eol,start " Backspace over everything in Insert Mode
