@@ -4,10 +4,14 @@ export TERM="xterm-256color"
 # Vim mode
 set -o vi
 
-# User aliases	
+# General aliases	
 alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
+# vim aliases
 alias vi='vim'
+# tmux aliases
+alias tls='tmux list-sessions'
+alias tks='tmux kill-sessions'
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
