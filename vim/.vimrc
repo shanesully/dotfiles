@@ -112,8 +112,7 @@ set noerrorbells " No audio beeping
 " set textwidth=79 " Wrap text at 79 chars
 " set colorcolumn=+1 " Color the next column(column 80)
 
-set guifont=ProggyTinyTTSZ:h16 " TrueType Monospace font
-set noantialias " Turn off font antialiasing
+set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
 
 set smartindent " Guess indentation settings
 set autoindent " Indent automatically
