@@ -64,6 +64,10 @@ if has("extra_search")
     set ignorecase " Case-insensitive search
 endif
 
+if has("gui_running")
+    set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
+endif
+
 " Disable Ex Mode
 nnoremap Q <nop>
 " Stop cursor jumping when joining lines
@@ -111,8 +115,6 @@ set noerrorbells " No audio beeping
 
 " set textwidth=79 " Wrap text at 79 chars
 " set colorcolumn=+1 " Color the next column(column 80)
-
-set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
 
 set smartindent " Guess indentation settings
 set autoindent " Indent automatically
