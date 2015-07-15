@@ -68,6 +68,10 @@ if has("gui_running")
     set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
 endif
 
+if has("mouse")
+    set mouse=a " Enable mouse
+endif
+
 " Disable Ex Mode
 nnoremap Q <nop>
 " Stop cursor jumping when joining lines
@@ -127,7 +131,6 @@ set tabstop=2 " Tabs are two spaces
 set softtabstop=4 " Insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftwidth=4 " Shift moves four spaces
 
-set mouse=a " Enable mouse navigation
 set mousehide " Hide the cursor when typing
 set backspace=indent,eol,start " Backspace over everything in Insert Mode
 
