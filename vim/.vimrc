@@ -123,7 +123,7 @@ set showmatch " Show matching parens
 set pastetoggle=<F10> " To disable autoindent for pasting
 
 set expandtab " Convert tabs to spaces  
-set tabstop=2 " Tabs are four spaces
+set tabstop=2 " Tabs are two spaces
 set softtabstop=4 " Insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftwidth=4 " Shift moves four spaces
 
