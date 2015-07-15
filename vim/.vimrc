@@ -43,7 +43,6 @@ if has("syntax")
     syntax enable " Enable syntax highlighting
     set t_Co=256 " Enable 256 colour support
     set background=dark " Set dark background - Support for dark colorschemes
-    silent! colorscheme molokai " Molokai colorscheme
 endif
 
 if has("cmdline_info")
@@ -66,6 +65,7 @@ endif
 
 if has("gui_running")
     set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
+    silent! colorscheme molokai " Molokai colorscheme
 endif
 
 if has("mouse")
