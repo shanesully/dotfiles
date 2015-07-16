@@ -1,5 +1,5 @@
 # !/bin/bash
 
-mkdir ~/.vim/autoload ~/.vim/bundle ~/.vim/colors ~/.vim/.backup ~/.vim/.swp
+mkdir -p vim/.vim/autoload vim/.vim/bundle vim/.vim/colors vim/.vim/.backup vim/.vim/.swp
 
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim # Install pathogen
+curl -LSso vim/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim # Install pathogen
