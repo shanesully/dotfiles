@@ -13,17 +13,21 @@ curl -LSso vim/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 echo "Downloading vim plugins..."
 
 # Download vim plugins
-cd ~/.vim/bundle
+cd vim/.vim/bundle
+{
 git clone https://github.com/altercation/vim-colors-solarized
 git clone https://github.com/Valloric/YouCompleteMe
 git clone https://github.com/kien/ctrlp.vim
+} &> /dev/null
 
 echo "Installing YouCompleteMe..."
 
 # Setup YouCompleteMe completion engine with semantic support for C-family languages
-cd YouCompleteMe;git submodule update --init --recursive >/dev/null;./install.sh --clang-completer >/dev/null
+{
+cd YouCompleteMe;git submodule update --init --recursive;./install.sh --clang-completer
+} &> /dev/null
 
-echo "Installing Solarizing..."
+echo "Solarizing..."
 
 # Setup vim Solarized colorscheme
 cp vim-colors-solarized/colors/* ~/.vim/colors
