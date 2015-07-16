@@ -16,6 +16,7 @@ if has("macunix")
     command OpenCurr :silent !open %
 endif
 
+" CtrlP plugin setting
 if exists('g:ctrl_user_command')
     " Unlet to actually use wildignore
     unlet g:ctrl_user_command
