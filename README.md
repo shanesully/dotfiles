@@ -1,5 +1,5 @@
 **Personal dotfiles**
 
-Run:
+Setup:
 
-*$ ./install.sh* to setup
+*$ ./install.sh*
