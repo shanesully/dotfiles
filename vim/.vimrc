@@ -17,7 +17,7 @@ if has("macunix")
 endif
 
 " CtrlP plugin setting
-if exists('g:ctrl_user_command')
+if exists("g:ctrl_user_command")
     " Unlet to actually use wildignore
     unlet g:ctrl_user_command
 endif
@@ -54,15 +54,6 @@ if has("extra_search")
     set ignorecase " Case-insensitive search
 endif
 
-if has("gui_running")
-    set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
-    " Disable all gui options(Whitelist by default)
-    " Ensures that both the left and right scrollbars are disabled
-    " This is much better for debugging purposes
-    set guioptions= 
-    silent! colorscheme molokai " Molokai colorscheme
-endif
-
 if has("mouse")
     set mouse=a " Enable mouse
 endif
@@ -85,6 +76,10 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+silent! colorscheme solarized " Solarized colorscheme
+set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
+set guioptions= " Whitelist gui options
 
 let mapleader = "," " Remap leader
 set backup " Turn file backup on
