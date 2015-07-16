@@ -56,7 +56,10 @@ endif
 
 if has("gui_running")
     set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
-    set guioptions-=r " Remove gui scrollbars
+    " Disable all gui options(Whitelist by default)
+    " Ensures that both the left and right scrollbars are disabled
+    " This is much better for debugging purposes
+    set guioptions= 
     silent! colorscheme molokai " Molokai colorscheme
 endif
 
