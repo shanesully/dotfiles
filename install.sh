@@ -40,6 +40,7 @@ echo "Symlinking complete."
 echo "Solarizing..."
 
 # Setup vim Solarized colorscheme
-cp ../vim-colors-solarized/colors/solarized.vim ~/.vim/colors
+cd ..
+cp vim-colors-solarized/colors/solarized.vim ../colors
 
 echo "Setup complete."
