@@ -30,7 +30,7 @@ cd YouCompleteMe;git submodule update --init --recursive;./install.sh --clang-co
 echo "Solarizing..."
 
 # Setup vim Solarized colorscheme
-cp vim-colors-solarized/colors/solarized.vim ~/.vim/colors
+cp ../vim-colors-solarized/colors/solarized.vim ~/.vim/colors
 
 echo "vim setup complete."
 
