@@ -16,3 +16,9 @@ cd YouCompleteMe;git submodule update --init --recursive >/dev/null;./install.sh
 
 # Setup vim Solarized colorscheme
 cp vim-colors-solarized/colors/* ~/.vim/colors
+
+# Symlink setup files to ~/
+ln -s /Users/$USER/dotfiles/shell/.bash_profile ~/.bash_profile
+ln -s /Users/$USER/dotfiles/vim/.vim ~/.vim
+ln -s /Users/$USER/dotfiles/vim/.vimrc ~/.vimrc 
+ln -s /Users/$USER/dotfiles/.tmux.conf ~/.tmux.conf
