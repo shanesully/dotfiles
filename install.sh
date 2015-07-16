@@ -35,8 +35,6 @@ ln -s /Users/$USER/dotfiles/vim/.vim ~/.vim
 ln -s /Users/$USER/dotfiles/vim/.vimrc ~/.vimrc 
 ln -s /Users/$USER/dotfiles/.tmux.conf ~/.tmux.conf
 
-echo "Symlinking complete."
-
 echo "Solarizing..."
 
 # Setup vim Solarized colorscheme
