@@ -65,6 +65,7 @@ endif
 
 if has("gui_running")
     set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
+    set guioptions-=r
     silent! colorscheme molokai " Molokai colorscheme
 endif
 
