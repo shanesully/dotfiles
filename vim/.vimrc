@@ -16,19 +16,9 @@ if has("macunix")
     command OpenCurr :silent !open %
 endif
 
-if exists(':CtrlP')
-    " <C-p> invokes CtrlP
-    let g:ctrlp_map = '<c-p>'
-    let g:ctrlp_cmd = 'CtrlP'
-
-    let g:ctrlp_show_hidden = 1 " Show hidden files
-
-    " Ignores to speed up CtrlP cacheing and startup
-    let g:ctrlp_custom_ignore = {
-      \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-      \ 'file': '\v\.(exe|so|dll)$',
-      \ 'link': 'some_bad_symbolic_links',
-      \ }
+if exists('g:ctrl_user_command')
+    " Unlet to actually use wildignore
+    unlet g:ctrl_user_command
 endif
 
 if has("autocmd")
@@ -54,7 +44,7 @@ endif
 if has("wildmenu")
     set wildmenu " Show a list of possible completions
     set wildmode=longest,list " Tab autocomplete longest part of string then list
-    set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux ignores
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/* " MacOSX/Linux ignores
 endif
 
 if has("extra_search")
