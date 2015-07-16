@@ -37,7 +37,7 @@ if has("syntax")
 endif
 
 if has("cmdline_info")
-    set ruler " Show cursor line and column info in statusbar
+    " set ruler " Show cursor line and column info in statusbar
     set showcmd " Show partial command in statusbar
     set showmode " Show mode in statusbar
 endif
