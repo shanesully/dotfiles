@@ -1,4 +1,4 @@
-# !/bin/bash
+#! /bin/bash
 
 mkdir -p vim/.vim/autoload vim/.vim/bundle vim/.vim/colors vim/.vim/.backup vim/.vim/.swp
 
