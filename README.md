@@ -1,4 +1,4 @@
-**Personal dotfiles**
+**Personal confs**
 
 Setup:
 
