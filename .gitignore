@@ -1,6 +1,4 @@
-vim/.vim/.netrwhist
-vim/.vim/autoload
-vim/.vim/colors
-vim/.vim/bundle
-vim/.vim/.swp
-vim/.vim/.backup
+# Track the vimrc
+!vim/.vimrc
+# But no subdirs
+vim/*
