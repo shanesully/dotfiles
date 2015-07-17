@@ -1,4 +1,4 @@
-# Ignore everything in the vim dir
+# Ignore all vim files
 vim/*
 # Except the rc
 !vim/.vimrc
