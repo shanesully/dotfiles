@@ -1,4 +1,4 @@
-# Track the vimrc
-!vim/.vimrc
-# But no subdirs
+# Ignore everything in the vim dir
 vim/*
+# Except the rc
+!vim/.vimrc
