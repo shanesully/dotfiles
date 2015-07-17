@@ -7,8 +7,10 @@ set -o vi
 # General aliases	
 alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
+
 # vim aliases
 alias vi='vim'
+
 # tmux aliases
 alias tls='tmux list-sessions'
 alias tks='tmux kill-sessions'
@@ -18,6 +20,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	# Show and hide hidden files on OS X
 	alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 	alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
 	# Open target with Finder
 	alias finder='open -a Finder' 
 fi

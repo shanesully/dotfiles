@@ -1,4 +1,5 @@
 # Ignore all vim files
 vim/*
+
 # Except the rc
 !vim/.vimrc
