@@ -54,9 +54,9 @@ if has("extra_search")
     set ignorecase " Case-insensitive search
 endif
 
-if has("mouse")
-    set mouse=a " Enable mouse
-endif
+" if has("mouse")
+"     set mouse=a " Enable mouse
+" endif
 
 " Disable Ex Mode
 nnoremap Q <nop>
