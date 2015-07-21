@@ -77,6 +77,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+set clipboard=unnamed " Access system clipboard
+
 silent! colorscheme solarized " Solarized colorscheme
 set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
 set guioptions= " Whitelist gui options
