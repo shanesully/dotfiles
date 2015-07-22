@@ -10,12 +10,6 @@ command Hs split
 " runtimepath manager
 execute pathogen#infect()
 
-" (Modern)Mac-specific
-if has("macunix")
-    " Open current file with OS X default
-    command OpenCurr :silent !open %
-endif
-
 " CtrlP cache helper
 if exists("g:ctrl_user_command")
     " Unlet to actually use wildignore
@@ -53,10 +47,6 @@ if has("extra_search")
     set incsearch " Incremental search(Highlight results as you type)
     set ignorecase " Case-insensitive search
 endif
-
-" if has("mouse")
-"     set mouse=a " Enable mouse
-" endif
 
 " Disable Ex Mode
 nnoremap Q <nop>
