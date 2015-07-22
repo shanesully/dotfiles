@@ -1,6 +1,6 @@
 # Color reporting for tmux
 export TERM="xterm-256color"
-# Change history file location
+# Change history file location - Group bash content
 export HISTFILE=$HOME/dotfiles/shells/bash/.bash_history
 
 # vi emulation mode
@@ -10,7 +10,7 @@ alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
 alias vi='vim'
 alias tls='tmux list-sessions'
-alias tks='tmux kill-sessions'
+alias tks='tmux kill-session'
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
