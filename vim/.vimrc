@@ -27,11 +27,10 @@ endif
 if has("syntax")
     syntax enable " Enable syntax highlighting
     set t_Co=256 " Enable 256 colour support
-    set background=dark " Set dark background - Support for dark colorschemes
+    set background=dark " Set dark background
 endif
 
 if has("cmdline_info")
-    " set ruler " Show cursor line and column info in statusbar
     set showcmd " Show partial command in statusbar
     set showmode " Show mode in statusbar
 endif
@@ -39,12 +38,12 @@ endif
 if has("wildmenu")
     set wildmenu " Show a list of possible completions
     set wildmode=longest,list " Tab autocomplete longest part of string then list
-    set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/* " MacOSX/Linux ignores
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/* " Cache-build ignores
 endif
 
 if has("extra_search")
     set hlsearch " Highlight search results
-    set incsearch " Incremental search(Highlight results as you type)
+    set incsearch " Incremental search
     set ignorecase " Case-insensitive search
 endif
 
@@ -61,7 +60,6 @@ vnoremap < <gv
 vnoremap > >gv 
 
 " tmux-like split navigation
-" <C-w> + [STANDARD VIM DIRECTIONAL KEY]
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
