@@ -4,8 +4,6 @@
 #
 # sos 
 #
-# Light setup script
-#
 
 echo "Creating vim files..."
 
@@ -27,8 +25,9 @@ cd .vim/bundle
 
 echo "Installing YouCompleteMe..."
 
+cd YouCompleteMe
+
 {
-    cd YouCompleteMe
     git submodule update --init --recursive
     ./install.sh --clang-completer
 } &> /dev/null
