@@ -9,15 +9,15 @@
 
 echo "Creating vim files..."
 
-mkdir -p vim/.vim/autoload vim/.vim/bundle vim/.vim/colors vim/.vim/.backup vim/.vim/.swp
+mkdir -p .vim/autoload .vim/bundle .vim/colors .vim/.backup .vim/.swp
 
 echo "Installing pathogen..."
 
-curl -LSso vim/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim 
+curl -LSso .vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim 
 
 echo "Downloading plugins..."
 
-cd vim/.vim/bundle
+cd .vim/bundle
 
 {
     git clone https://github.com/altercation/vim-colors-solarized
@@ -35,10 +35,10 @@ echo "Installing YouCompleteMe..."
 
 echo "Creating symlinks..."
 
-ln -s /Users/$USER/dotfiles/shells/bash/.bash_profile ~/.bash_profile
-ln -s /Users/$USER/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -s /Users/$USER/dotfiles/vim/.vim ~/.vim
-ln -s /Users/$USER/dotfiles/vim/.vimrc ~/.vimrc 
+ln -s /Users/$USER/dotfiles/.bash_profile ~/.bash_profile
+ln -s /Users/$USER/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s /Users/$USER/dotfiles/.vim ~/.vim
+ln -s /Users/$USER/dotfiles/.vimrc ~/.vimrc 
 
 echo "Copying Solarized..."
 

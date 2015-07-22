@@ -1,8 +1,5 @@
-# Ignore all vim files
-vim/*
+# Don't track vim directory
+.vim/*
 
-# Except the rc
-!vim/.vimrc
-
-# Ignore bash history file
-shells/bash/.bash_history
+# Don't track history file
+.bash_history
