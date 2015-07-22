@@ -36,6 +36,7 @@ echo "Installing YouCompleteMe..."
 echo "Creating symlinks..."
 
 ln -s /Users/$USER/dotfiles/.bash_profile ~/.bash_profile
+ln -s /Users/$USER/dotfiles/.bash_history ~/.bash_history
 ln -s /Users/$USER/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s /Users/$USER/dotfiles/.vim ~/.vim
 ln -s /Users/$USER/dotfiles/.vimrc ~/.vimrc 
