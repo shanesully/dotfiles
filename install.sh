@@ -29,9 +29,9 @@ git submodule update --init --recursive
 echo "Creating symlinks..."
 
 ln -s /Users/$USER/dotfiles/shells/bash/.bash_profile ~/.bash_profile
+ln -s /Users/$USER/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s /Users/$USER/dotfiles/vim/.vim ~/.vim
 ln -s /Users/$USER/dotfiles/vim/.vimrc ~/.vimrc 
-ln -s /Users/$USER/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 echo "Copying Solarized..."
 
