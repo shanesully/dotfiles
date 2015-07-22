@@ -1,4 +1,11 @@
 #! /bin/bash
+#
+# Wed 22 Jul 2015 14:48:06 IST
+#
+# sos 
+#
+# Light setup script
+#
 
 echo "Creating vim files..."
 
@@ -13,17 +20,17 @@ echo "Downloading plugins..."
 cd vim/.vim/bundle
 
 {
-git clone https://github.com/altercation/vim-colors-solarized
-git clone https://github.com/Valloric/YouCompleteMe
-git clone https://github.com/kien/ctrlp.vim
+    git clone https://github.com/altercation/vim-colors-solarized
+    git clone https://github.com/Valloric/YouCompleteMe
+    git clone https://github.com/kien/ctrlp.vim
 } &> /dev/null
 
 echo "Installing YouCompleteMe..."
 
 {
-cd YouCompleteMe
-git submodule update --init --recursive
-./install.sh --clang-completer
+    cd YouCompleteMe
+    git submodule update --init --recursive
+    ./install.sh --clang-completer
 } &> /dev/null
 
 echo "Creating symlinks..."
