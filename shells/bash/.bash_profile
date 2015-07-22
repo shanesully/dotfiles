@@ -1,5 +1,7 @@
 # Color reporting for tmux
 export TERM="xterm-256color"
+# Change history file location
+export HISTFILE=$HOME/dotfiles/shells/bash/.bash_history
 
 # vi emulation mode
 set -o vi

@@ -3,3 +3,6 @@ vim/*
 
 # Except the rc
 !vim/.vimrc
+
+# Ignore bash history file
+shells/bash/.bash_history
