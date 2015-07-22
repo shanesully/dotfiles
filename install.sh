@@ -35,7 +35,7 @@ ln -s /Users/$USER/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 echo "Copying Solarized..."
 
-cd ..
+cd .. # .vim/bundle
 cp vim-colors-solarized/colors/solarized.vim ../colors
 
 echo "Setup complete."
