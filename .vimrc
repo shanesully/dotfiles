@@ -79,7 +79,10 @@ set splitright " vsplit right by default
 set splitbelow " split down by default
 set modelines=0 " Prevent modeline exploit
 set nu " Enable line numbering
+
 set foldenable " Enable source code folding
+set foldmethod=indent " Fold based on indent
+
 set lazyredraw " Redraw screen only when necessary
 set ttyfast " Faster scrolling
 set shortmess+=I " Disable startup message
