@@ -3,10 +3,6 @@
 " Disable Vi Compatability(First and foremost)
 set nocompatible
 
-" Aliases must start with uppercase
-command Vs vsplit
-command Hs split
-
 " runtimepath manager
 execute pathogen#infect()
 
