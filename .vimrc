@@ -82,6 +82,7 @@ set nu " Enable line numbering
 
 set foldenable " Enable source code folding
 set foldmethod=indent " Fold based on indent
+set nofoldenable " Don't fold by default
 
 set lazyredraw " Redraw screen only when necessary
 set ttyfast " Faster scrolling
