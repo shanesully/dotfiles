@@ -19,6 +19,7 @@ cd .vim/bundle
 
 {
     git clone https://github.com/altercation/vim-colors-solarized
+    git clone https://github.com/tomasr/molokai.git
     git clone https://github.com/Valloric/YouCompleteMe
     git clone https://github.com/kien/ctrlp.vim
 } &> /dev/null
@@ -36,6 +37,10 @@ echo "Copying Solarized..."
 
 cd .. # .vim/bundle
 cp vim-colors-solarized/colors/solarized.vim ../colors
+
+echo "Copying Molokai..."
+
+cp molokai/colors/molokai.vim ../colors
 
 echo "Creating symlinks..."
 

@@ -26,6 +26,14 @@ if has("syntax")
     set background=dark " Set dark background
 endif
 
+if has("gui_running")
+    set guioptions= " Whitelist gui options
+    set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
+    silent! colorscheme molokai " Molokai colorscheme
+else
+    silent! colorscheme solarized " Solarized colorscheme
+endif
+
 if has("cmdline_info")
     set showcmd " Show partial command in statusbar
     set showmode " Show mode in statusbar
@@ -62,10 +70,6 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 set clipboard=unnamed " Access system clipboard
-
-silent! colorscheme solarized " Solarized colorscheme
-set guifont=Source\ Code\ Pro:h12 " TrueType Monospace font
-set guioptions= " Whitelist gui options
 
 let mapleader = "," " Remap leader
 set backup " Turn file backup on
