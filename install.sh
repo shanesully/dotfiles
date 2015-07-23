@@ -32,16 +32,16 @@ cd YouCompleteMe
     ./install.sh --clang-completer
 } &> /dev/null
 
+echo "Copying Solarized..."
+
+cd .. # .vim/bundle
+cp vim-colors-solarized/colors/solarized.vim ../colors
+
 echo "Creating symlinks..."
 
 ln -s /Users/$USER/dotfiles/.bash_profile ~/.bash_profile
 ln -s /Users/$USER/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s /Users/$USER/dotfiles/.vim ~/.vim
 ln -s /Users/$USER/dotfiles/.vimrc ~/.vimrc 
-
-echo "Copying Solarized..."
-
-cd .. # .vim/bundle
-cp vim-colors-solarized/colors/solarized.vim ../colors
 
 echo "Setup complete."
