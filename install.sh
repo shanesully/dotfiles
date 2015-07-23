@@ -33,13 +33,10 @@ cd YouCompleteMe
     ./install.sh --clang-completer
 } &> /dev/null
 
-echo "Copying Solarized..."
+echo "Copying colorschemes..."
 
 cd .. # .vim/bundle
 cp vim-colors-solarized/colors/solarized.vim ../colors
-
-echo "Copying Molokai..."
-
 cp molokai/colors/molokai.vim ../colors
 
 echo "Creating symlinks..."
