@@ -105,8 +105,8 @@ set pastetoggle=<F10> " To disable autoindent for pasting
 
 set expandtab " Convert tabs to spaces  
 set tabstop=4 " Tabs are four spaces
-set softtabstop=2 " Insert/delete 2 spaces when hitting a TAB/BACKSPACE
-set shiftwidth=2 " Shift moves two spaces
+set softtabstop=4 " Insert/delete 4 spaces when hitting a TAB/BACKSPACE
+set shiftwidth=4 " Shift moves four spaces
 
 set mousehide " Hide the cursor when typing
 set backspace=indent,eol,start " Backspace over everything in Insert Mode
