@@ -18,6 +18,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
 	# Open target with Finder
 	alias finder='open -a Finder' 
+fi
 
 # Link git-completion
 source ~/git-completion.bash
