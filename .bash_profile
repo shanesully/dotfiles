@@ -7,6 +7,8 @@ set -o vi
 alias ls='ls -G' # Coloured directory listings
 alias cl='clear'
 alias vi='vim'
+alias py='python'
+alias py3='python3'
 alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
 
