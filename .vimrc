@@ -14,10 +14,7 @@ endif
 
 if has("autocmd")
     " Load files for specific filetypes
-    filetype on " Detect filetype
-    filetype indent on " Automatic indentation
-    filetype plugin on
-    autocmd BufRead,BufNewFile *.json set filetype=json " Don't treat json as javascript
+    filetype indent plugin on " Detect filetype, auto-indent
 endif
 
 if has("syntax")
