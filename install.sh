@@ -26,8 +26,6 @@ cp vim-colors-solarized/colors/solarized.vim ../colors
 
 echo "Creating symlinks..."
 
-DIR=""
-
 if [ "$(uname)" == "Darwin" ]; then
     DIR="Users"
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
