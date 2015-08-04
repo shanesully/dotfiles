@@ -1,7 +1,6 @@
 #! /bin/bash
 #
-# Wed 22 Jul 2015 14:48:06 IST
-#
+# Tue  4 Aug 2015 14:26:48 IST
 # sos 
 #
 
@@ -19,25 +18,12 @@ cd .vim/bundle
 
 {
     git clone https://github.com/altercation/vim-colors-solarized
-    git clone https://github.com/tomasr/molokai.git
-    git clone https://github.com/Valloric/YouCompleteMe
-    git clone https://github.com/kien/ctrlp.vim
-} &> /dev/null
-
-echo "Installing YouCompleteMe..."
-
-cd YouCompleteMe
-
-{
-    git submodule update --init --recursive
-    ./install.sh --clang-completer
 } &> /dev/null
 
 echo "Copying colorschemes..."
 
 cd .. # .vim/bundle
 cp vim-colors-solarized/colors/solarized.vim ../colors
-cp molokai/colors/molokai.vim ../colors
 
 echo "Creating symlinks..."
 
