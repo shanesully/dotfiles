@@ -39,6 +39,8 @@ if [ -n "$DIR" ]; then
     ln -s /$DIR/$USER/dotfiles/.tmux.conf ~/
     ln -s /$DIR/$USER/dotfiles/.vim ~/
     ln -s /$DIR/$USER/dotfiles/.vimrc ~/
+else
+    echo "Symlinking aborted. Unable to detect OS."
 fi
 
 echo "Setup complete."
