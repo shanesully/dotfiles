@@ -22,7 +22,6 @@ cd .vim/bundle
 
 echo "Copying colorschemes..."
 
-cd .. # .vim/bundle
 cp vim-colors-solarized/colors/solarized.vim ../colors
 
 echo "Creating symlinks..."
