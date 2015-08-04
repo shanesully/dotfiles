@@ -26,9 +26,17 @@ cp vim-colors-solarized/colors/solarized.vim ../colors
 
 echo "Creating symlinks..."
 
-ln -s /Users/$USER/dotfiles/.bash_profile ~/
-ln -s /Users/$USER/dotfiles/.tmux.conf ~/
-ln -s /Users/$USER/dotfiles/.vim ~/
-ln -s /Users/$USER/dotfiles/.vimrc ~/
+DIR=""
+
+if [ "$(uname)" == "Darwin" ]; then
+    DIR="Users"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    DIR="home"
+fi
+
+ln -s /$DIR/$USER/dotfiles/.bash_profile ~/
+ln -s /$DIR/$USER/dotfiles/.tmux.conf ~/
+ln -s /$DIR/$USER/dotfiles/.vim ~/
+ln -s /$DIR/$USER/dotfiles/.vimrc ~/
 
 echo "Setup complete."
