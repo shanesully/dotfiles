@@ -41,9 +41,9 @@ cp molokai/colors/molokai.vim ../colors
 
 echo "Creating symlinks..."
 
-ln -s /Users/$USER/dotfiles/.bash_profile ~/.bash_profile
-ln -s /Users/$USER/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s /Users/$USER/dotfiles/.vim ~/.vim
-ln -s /Users/$USER/dotfiles/.vimrc ~/.vimrc 
+ln -s /Users/$USER/dotfiles/.bash_profile ~/
+ln -s /Users/$USER/dotfiles/.tmux.conf ~/
+ln -s /Users/$USER/dotfiles/.vim ~/
+ln -s /Users/$USER/dotfiles/.vimrc ~/
 
 echo "Setup complete."
