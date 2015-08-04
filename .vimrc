@@ -6,12 +6,6 @@ set nocompatible
 " runtimepath manager
 execute pathogen#infect()
 
-" CtrlP cache helper
-if exists("g:ctrl_user_command")
-    " Unlet to actually use wildignore
-    unlet g:ctrl_user_command
-endif
-
 if has("autocmd")
     " Load files for specific filetypes
     filetype indent plugin on " Detect filetype, auto-indent
