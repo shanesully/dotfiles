@@ -30,11 +30,15 @@ if [ "$(uname)" == "Darwin" ]; then
     DIR="Users"
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     DIR="home"
+else
+    DIR=""
 fi
 
-ln -s /$DIR/$USER/dotfiles/.bash_profile ~/
-ln -s /$DIR/$USER/dotfiles/.tmux.conf ~/
-ln -s /$DIR/$USER/dotfiles/.vim ~/
-ln -s /$DIR/$USER/dotfiles/.vimrc ~/
+if [ -n "$DIR" ]; then 
+    ln -s /$DIR/$USER/dotfiles/.bash_profile ~/
+    ln -s /$DIR/$USER/dotfiles/.tmux.conf ~/
+    ln -s /$DIR/$USER/dotfiles/.vim ~/
+    ln -s /$DIR/$USER/dotfiles/.vimrc ~/
+fi
 
 echo "Setup complete."
