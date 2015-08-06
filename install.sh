@@ -1,6 +1,5 @@
 #! /bin/bash
 #
-# Tue  4 Aug 2015 14:26:48 IST
 # sos 
 #
 
