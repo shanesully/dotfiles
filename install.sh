@@ -14,15 +14,13 @@ curl -LSso .vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo "Downloading plugins..."
 
-cd .vim/bundle
-
 {
-    git clone https://github.com/altercation/vim-colors-solarized
+    git clone https://github.com/altercation/vim-colors-solarized .vim/bundle
 } &> /dev/null
 
-echo "Copying colorschemes..."
+echo "Symlinking colorschemes..."
 
-cp vim-colors-solarized/colors/solarized.vim ../colors
+ln -s .vim/bundle/vim-colors-solarized/colors/solarized.vim .vim/colors
 
 echo "Creating symlinks..."
 
