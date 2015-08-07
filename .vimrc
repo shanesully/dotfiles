@@ -81,7 +81,7 @@ set shortmess+=I " Disable startup message
 set linespace=0 " No padding between lines
 set cursorline " Highlight the current line
 set linebreak " Soft-wrap: Don't break words
-set encoding=utf8 " Encoding
+set encoding=utf8 " Unicode encoding by default
 set autoread " Reload a file if it changes on disk
 set autowrite " Automatically :write before running commands
 set hidden " Hide unsaved buffers instead of closing them
