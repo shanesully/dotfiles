@@ -99,6 +99,7 @@ set tabstop=4 " Tabs are four spaces
 set softtabstop=4 " Insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftwidth=4 " Shift moves four spaces
 
+set mouse=a " Enable mouse
 set mousehide " Hide the cursor when typing
 set backspace=indent,eol,start " Backspace over everything in Insert Mode
 
