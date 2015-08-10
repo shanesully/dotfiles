@@ -18,7 +18,7 @@ if has("syntax")
 endif
 
 if has("cmdline_info")
-    set showcmd " Show partial command in statusbar
+    set showcmd " Statusbar info related to current command
 endif
 
 if has("wildmenu")
