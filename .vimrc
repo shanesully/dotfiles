@@ -34,8 +34,8 @@ if has("extra_search")
     set ignorecase " Case-insensitive search
 endif
 
-" Disable Ex Mode
-nnoremap Q <nop>
+" Don't use Ex mode, use Q for formatting
+map Q gq
 " Stop cursor jumping when joining lines
 nnoremap J mzJ`z
 " Center cursor after jump
@@ -68,8 +68,11 @@ set undolevels=1000 " Lots of undo levels
 
 set splitright " vsplit right by default
 set splitbelow " split down by default
+set diffopt+=vertical " Always use vertical diffs
 set modelines=0 " Prevent modeline exploit
+
 set nu " Enable line numbering
+set cursorline " Highlight the current line
 
 set foldenable " Enable source code folding
 set foldmethod=indent " Fold based on indent
@@ -79,7 +82,6 @@ set lazyredraw " Redraw screen only when necessary
 set ttyfast " Faster scrolling
 set shortmess+=I " Disable startup message
 set linespace=0 " No padding between lines
-set cursorline " Highlight the current line
 set linebreak " Soft-wrap: Don't break words
 set encoding=utf8 " Unicode encoding by default
 set autoread " Reload a file if it changes on disk
@@ -91,6 +93,7 @@ set noerrorbells " No audio beeping
 set smartindent " Guess indentation settings
 set autoindent " Indent automatically
 set copyindent " Indent using previous settings
+
 set showmatch " Show matching parens
 set pastetoggle=<F10> " To disable autoindent for pasting
 
@@ -102,5 +105,3 @@ set shiftwidth=4 " Shift moves four spaces
 set mouse=a " Enable mouse
 set mousehide " Hide the cursor when typing
 set backspace=indent,eol,start " Backspace over everything in Insert Mode
-
-set diffopt+=vertical " Always use vertical diffs
