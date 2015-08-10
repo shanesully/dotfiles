@@ -36,11 +36,9 @@ endif
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
+
 " Stop cursor jumping when joining lines
 nnoremap J mzJ`z
-" Center cursor after jump
-nnoremap n nzz
-nnoremap } }
 
 " Better indentation
 vnoremap < <gv 
