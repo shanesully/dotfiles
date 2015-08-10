@@ -50,7 +50,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-set guioptions= " Whitelist gui options
 set guifont=Source\ Code\ Pro:h12 " Set font
 silent! colorscheme solarized " Solarized colorscheme
 
