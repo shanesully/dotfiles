@@ -71,17 +71,16 @@ set modelines=0 " Prevent modeline exploit
 set number " Line numbering
 set ruler " Display cursor location info
 set cursorline " Highlight the current line
+set noerrorbells " No audio beeping
+set shortmess+=I " Disable startup message
 
 set lazyredraw " Redraw screen only when necessary
 set ttyfast " Faster scrolling
-set shortmess+=I " Disable startup message
 set linebreak " Soft-wrap: Don't break words
 set encoding=utf8 " Unicode encoding by default
 set autoread " Reload a file if it changes on disk
 set autowrite " Automatically :write before running commands
 set hidden " Hide unsaved buffers instead of closing them
-
-set noerrorbells " No audio beeping
 
 set smartindent " Guess indentation settings
 set autoindent " Indent automatically
