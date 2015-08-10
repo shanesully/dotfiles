@@ -55,7 +55,9 @@ silent! colorscheme solarized " Solarized colorscheme
 set clipboard=unnamed " Access system clipboard
 
 let mapleader = "," " Remap leader
-set backup " Turn file backup on
+
+set backspace=indent,eol,start " Backspace over everything in Insert Mode
+
 set backupdir=~/.vim/.backup " Set backup directory
 set directory=~/.vim/.swp " Set swapfile directory
 
@@ -97,4 +99,3 @@ if has('mouse')
 endif
 
 set mousehide " Hide the cursor when typing
-set backspace=indent,eol,start " Backspace over everything in Insert Mode
