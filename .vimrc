@@ -19,7 +19,6 @@ endif
 
 if has("cmdline_info")
     set showcmd " Show partial command in statusbar
-    set showmode " Show mode in statusbar
 endif
 
 if has("wildmenu")
