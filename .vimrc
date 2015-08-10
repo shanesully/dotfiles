@@ -75,7 +75,6 @@ set cursorline " Highlight the current line
 set lazyredraw " Redraw screen only when necessary
 set ttyfast " Faster scrolling
 set shortmess+=I " Disable startup message
-set linespace=0 " No padding between lines
 set linebreak " Soft-wrap: Don't break words
 set encoding=utf8 " Unicode encoding by default
 set autoread " Reload a file if it changes on disk
