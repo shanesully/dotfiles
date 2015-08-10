@@ -68,7 +68,7 @@ set splitbelow " split down by default
 set diffopt+=vertical " Always use vertical diffs
 set modelines=0 " Prevent modeline exploit
 
-set nu " Enable line numbering
+set number " Enable line numbering
 set cursorline " Highlight the current line
 
 set lazyredraw " Redraw screen only when necessary
