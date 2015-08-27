@@ -11,6 +11,7 @@ alias py='python'
 alias py3='python3'
 alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
+alias lc='cl'
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
