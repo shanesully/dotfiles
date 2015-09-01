@@ -11,6 +11,7 @@ alias py='python'
 alias py3='python3'
 alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
+alias tas='tmux a -t'
 alias lc='cl'
 
 # Mac-specific 
