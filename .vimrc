@@ -50,7 +50,6 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 set guifont=Source\ Code\ Pro:h12 " Set font
-silent! colorscheme solarized " Solarized colorscheme
 
 set clipboard=unnamed " Access system clipboard
 
