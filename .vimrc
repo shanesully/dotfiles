@@ -70,7 +70,7 @@ set diffopt+=vertical " Always use vertical diffs
 set modelines=0 " Prevent modeline exploit
 
 set number " Line numbering
-set cursorline " Highlight the current line
+" set cursorline " Highlight the current line
 set noerrorbells " No audio beeping
 set shortmess+=I " Disable startup message
 
