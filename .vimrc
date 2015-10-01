@@ -50,6 +50,9 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 set clipboard=unnamed " Access system clipboard
+"
+" No yellow line numbers
+highlight LineNr ctermfg=grey 
 
 let mapleader = "," " Remap leader
 
