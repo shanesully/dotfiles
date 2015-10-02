@@ -4,7 +4,7 @@ export TERM="xterm-256color"
 # vi emulation mode
 set -o vi
 
-alias ls='ls -G' # Coloured directory listings
+alias ls='ls -aG' # Coloured directory listings, list all
 alias cl='clear'
 alias vi='vim'
 alias py='python'
