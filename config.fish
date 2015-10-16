@@ -1,3 +1,7 @@
+alias cl='clear'
+alias update='brew update'
+alias upgrade='brew upgrade'
+
 function fuck -d 'Correct your previous console command'
     set -l exit_code $status
     set -l eval_script (mktemp 2>/dev/null ; or mktemp -t 'thefuck')
