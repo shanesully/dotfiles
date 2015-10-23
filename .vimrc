@@ -50,9 +50,6 @@ map <C-l> <C-w>l
 
 set clipboard=unnamed " Access system clipboard
 
-" No yellow line numbers
-highlight LineNr ctermfg=grey 
-
 let mapleader = "," " Remap leader
 
 set backspace=indent,eol,start " Backspace over everything
