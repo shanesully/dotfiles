@@ -7,7 +7,6 @@ set nocompatible
 execute pathogen#infect()
 
 if has("autocmd")
-    " Load files for specific filetypes
     filetype indent plugin on " Detect filetype, auto-indent
 endif
 
@@ -18,7 +17,7 @@ if has("syntax")
 endif
 
 if has("cmdline_info")
-    set showcmd " Statusbar info related to current command
+    set showcmd " Show info in statusbar related to current command
 endif
 
 if has("wildmenu")
@@ -50,36 +49,37 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 set clipboard=unnamed " Access system clipboard
-"
+
 " No yellow line numbers
 highlight LineNr ctermfg=grey 
 
 let mapleader = "," " Remap leader
 
-set backspace=indent,eol,start " Backspace over everything in Insert Mode
+set backspace=indent,eol,start " Backspace over everything
 
-set backupdir=~/.vim/.backup " Set backup directory
-set directory=~/.vim/.swp " Set swapfile directory
+set backupdir=~/.vim/.backup " Backups location
+set directory=~/.vim/.swp " Swapfiles location
 
-set history=1000 " Lots of history
-set undolevels=1000 " Lots of undo levels
+" Number of remembered items
+set history=1000
+set undolevels=1000
 
-set splitright " vsplit right by default
-set splitbelow " split down by default
-set diffopt+=vertical " Always use vertical diffs
+set splitright " Vertical split right by default
+set splitbelow " Horizontal split down by default
+set diffopt+=vertical " Veritcal diffs 
 set modelines=0 " Prevent modeline exploit
 
-set number " Line numbering
+set number " Enable line numbering
 " set cursorline " Highlight the current line
-set noerrorbells " No audio beeping
+set noerrorbells " Disable beep
 set shortmess+=I " Disable startup message
 
 set lazyredraw " Redraw screen only when necessary
 set ttyfast " Faster scrolling
 set linebreak " Soft-wrap: Don't break words
-set encoding=utf8 " Unicode encoding by default
+set encoding=utf8 " Unicode by default
 set autoread " Reload a file if it changes on disk
-set autowrite " Automatically :write before running commands
+set autowrite " Automatically save before running commands
 set hidden " Hide unsaved buffers instead of closing them
 
 set smartindent " Guess indentation settings
