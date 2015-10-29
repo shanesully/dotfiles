@@ -11,6 +11,8 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(tool-bar-mode -1)
+
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
