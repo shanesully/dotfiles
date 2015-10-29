@@ -29,3 +29,5 @@
 (setq make-backup-files nil)
 (setq suggest-key-bindings t)
 
+(load-theme 'cyberpunk t)
+
