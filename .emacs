@@ -31,3 +31,5 @@
 
 (load-theme 'cyberpunk t)
 
+(require 'evil)
+(evil-mode 1)
