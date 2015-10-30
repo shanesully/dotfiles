@@ -1,9 +1,6 @@
 # Color reporting for tmux
 export TERM="xterm-256color"
 
-# Pythonpath
-export PYTHONPATH=$PYTHONPATH:~/anardan/src/
-
 # vi emulation mode
 set -o vi
 
