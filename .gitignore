@@ -3,3 +3,6 @@
 
 # Don't track history file
 .bash_history
+
+# Emacs backup files
+\#.*#
