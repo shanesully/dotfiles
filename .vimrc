@@ -76,6 +76,7 @@ set splitbelow " Horizontal split down by default
 set diffopt+=vertical " Veritcal diffs 
 set modelines=0 " Prevent modeline exploit
 
+set laststatus=2 " Show current filename
 set number " Enable line numbering
 " set cursorline " Highlight the current line
 set noerrorbells " Disable beep
