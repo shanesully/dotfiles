@@ -13,6 +13,7 @@ alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
 alias tas='tmux a -t'
 alias lc='cl'
+alias reload_conf='source ~/.bash_profile' # Reload bashrc
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
