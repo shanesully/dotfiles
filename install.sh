@@ -5,7 +5,7 @@
 
 echo "Creating vim files..."
 
-mkdir -p .vim/autoload .vim/bundle .vim/colors .vim/.backup .vim/.swp
+mkdir -p .vim/autoload .vim/bundle .vim/colors .vim/.backup .vim/.swp .emacs.d
 
 echo "Installing pathogen..."
 
