@@ -15,11 +15,13 @@ echo "Downloading plugins..."
 
 {
     git clone https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
+    git clone https://github.com/tpope/vim-vividchalk.git .vim/bundle/vim-vividchalk
 } &> /dev/null
 
 echo "Symlinking colorschemes..."
 
 ln -s .vim/bundle/vim-colors-solarized/colors/solarized.vim .vim/colors/
+ln -s .vim/bundle/vim-vividchalk/colors/vividchalk.vim .vim/colors/
 
 echo "Creating symlinks..."
 
