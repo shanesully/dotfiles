@@ -14,6 +14,8 @@ alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
 alias tas='tmux a -t'
 alias lc='cl'
+# tmux 256-colour support:
+alias tmux='tmux -2'
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
