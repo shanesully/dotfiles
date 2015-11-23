@@ -13,7 +13,6 @@ alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
 alias tas='tmux a -t'
 alias lc='cl'
-alias reload_conf='source ~/.bash_profile' # Reload bashrc
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
@@ -23,6 +22,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
 	# Open target with Finder
 	alias finder='open -a Finder' 
+    alias reload_conf='source ~/.bash_profile' # Reload bashrc
 fi
 
 # Link git-completion
