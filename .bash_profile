@@ -4,7 +4,8 @@ export TERM="xterm-256color"
 # vi emulation mode
 set -o vi
 
-alias ls='ls -G' # Coloured directory listings
+# Coloured directory listings
+alias ls='ls -G'
 alias cl='clear'
 alias vi='vim'
 alias py='python'
@@ -21,8 +22,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 	# Open target with Finder
-	alias finder='open -a Finder' 
-    alias reload_conf='source ~/.bash_profile' # Reload bashrc
+	alias finder='open -a Finder'
+    # Reload bashrc
+    alias reload_conf='source ~/.bash_profile'
 fi
 
 # Link git-completion
