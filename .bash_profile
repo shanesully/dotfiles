@@ -4,6 +4,8 @@ export TERM="xterm-256color"
 # vi emulation mode
 set -o vi
 
+# Aliases
+
 # Coloured directory listings
 alias ls='ls -G'
 alias cl='clear'
@@ -16,6 +18,9 @@ alias tas='tmux a -t'
 alias lc='cl'
 # tmux 256-colour support:
 alias tmux='tmux -2'
+
+# git section
+alias gl='git log --graph --pretty --oneline'
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
