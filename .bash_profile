@@ -20,7 +20,7 @@ alias lc='cl'
 alias tmux='tmux -2'
 
 # git section
-alias gl='git log --graph --pretty --oneline'
+alias gl='git log --graph --abbrev-commit --pretty=oneline'
 
 # Mac-specific 
 if [ "$(uname)" == "Darwin" ]; then
