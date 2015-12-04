@@ -53,9 +53,5 @@
 ;; Black, high-contrast theme
 (load-theme 'cyberpunk t)
 
-;; Vim emulation mode
-(require 'evil)
-(evil-mode 1)
-
 ;; Line numbering for every buffer
 (global-linum-mode t)
