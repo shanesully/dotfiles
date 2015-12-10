@@ -20,6 +20,7 @@ alias lc='cl'
 alias tmux='tmux -2'
 
 # git section
+alias g='git'
 alias gl='git log --graph --abbrev-commit --pretty=oneline'
 
 # Mac-specific 
