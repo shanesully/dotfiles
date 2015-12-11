@@ -18,4 +18,19 @@ source ~/zsh-git-prompt/zshrc.sh
 PROMPT='%B%m%~%b$(git_super_status) %# '
 
 alias ls='ls -G'
+alias cl='clear'
+alias vi='vim'
+alias py='python'
+alias py3='python3'
+alias tls='tmux list-sessions'
+alias tks='tmux kill-session'
+alias tas='tmux a -t'
+alias lc='cl'
+
+# tmux 256-colour support:
+alias tmux='tmux -2'
+
+# git section
+alias g='git'
+alias gl='git log --graph --abbrev-commit --pretty=oneline'
 
