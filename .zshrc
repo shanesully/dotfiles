@@ -3,7 +3,13 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
-bindkey -e
+
+# vim keybindings
+bindkey -v
+
+# Kill 400ms ESC mode-switch lag
+export KEYTIMEOUT=1
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/$USER/.zshrc'
