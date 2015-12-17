@@ -15,3 +15,4 @@ function fuck -d 'Correct your previous console command'
 end
 
 set -U EDITOR vim
+

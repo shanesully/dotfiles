@@ -125,5 +125,6 @@ function! RemoveFancyChars()
     let typo["…"] = '...'
     :exe ":%s/".join(keys(typo), '\|').'/\=typo[submatch(0)]/ge'
 endfunction
+
 command! RemoveFancyChars :call RemoveFancyChars()
 

@@ -43,4 +43,3 @@ alias gl='git log --graph --abbrev-commit --pretty=oneline'
 # Use vim as the editor
 export EDITOR=vi
 
-
