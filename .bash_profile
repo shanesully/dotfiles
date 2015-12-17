@@ -74,3 +74,4 @@ shopt -s histappend
 
 # Save and reload history after each command
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
