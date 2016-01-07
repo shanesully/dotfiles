@@ -1,0 +1,7 @@
+xterm*termName: xterm-256color
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+Xterm*saveLines: 4096
+XTerm*background:black
+XTerm*foreground:grey
+
