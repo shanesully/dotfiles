@@ -35,16 +35,15 @@ if [ "$(uname)" == "Darwin" ]; then
     alias reload_conf='source ~/.bash_profile'
 fi
 
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+    GIT_PROMPT_THEME=Default
+    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
+
 # Link git-completion
 source ~/git-completion.bash
 if [ -f "~/.git-completion.bash" ]; then
     source ~/git-completion.bash
-fi
-
-# Link to bash git prompt
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-	GIT_PROMPT_THEME=Solarized
-	source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 
 # Link to bash-completion
