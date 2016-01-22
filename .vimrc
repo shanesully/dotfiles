@@ -35,9 +35,6 @@ if has("extra_search")
     set ignorecase " Case-insensitive search
 endif
 
-" Disable gui right scrollbar
-set guioptions-=r
-
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
