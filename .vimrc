@@ -107,5 +107,3 @@ set shiftwidth=4 " Shift moves four spaces
 
 set mousehide " Hide the cursor when typing
 
-command! RemoveFancyChars :call RemoveFancyChars()
-
