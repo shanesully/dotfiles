@@ -16,6 +16,7 @@ if has("syntax")
     set background=dark " Set dark background
     " Grey line numbers
     highlight LineNr ctermfg=grey
+    colorscheme gotham
 endif
 
 if has("cmdline_info")
@@ -109,23 +110,6 @@ if has('mouse')
 endif
 
 set mousehide " Hide the cursor when typing
-
-" RemoveFancyChars COMMAND
-" Remove smart quotes, etc.
-"
-" @garybernhardt
-
-function! RemoveFancyChars()
-    let typo = {}
-    let typo["“"] = '"'
-    let typo["”"] = '"'
-    let typo["‘"] = "'"
-    let typo["’"] = "'"
-    let typo["–"] = '--'
-    let typo["—"] = '---'
-    let typo["…"] = '...'
-    :exe ":%s/".join(keys(typo), '\|').'/\=typo[submatch(0)]/ge'
-endfunction
 
 command! RemoveFancyChars :call RemoveFancyChars()
 
