@@ -35,12 +35,6 @@ if has("extra_search")
     set ignorecase " Case-insensitive search
 endif
 
-" Font should be set without checking for an existing gui session
-" if we still want such settings to apply to a gui launched from
-" an existing commandline session
-set guifont=Monaco:h10
-set noantialias
-
 " Disable gui right scrollbar
 set guioptions-=r
 
