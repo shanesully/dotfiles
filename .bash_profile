@@ -1,6 +1,9 @@
 # Color reporting for tmux
 export TERM="xterm-256color"
 
+# Default editor
+export EDITOR='vim'
+
 # vi emulation mode
 set -o vi
 
