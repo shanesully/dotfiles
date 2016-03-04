@@ -5,7 +5,7 @@ export TERM="xterm-256color"
 export EDITOR='vim'
 
 # vi emulation mode
-set -o vi
+# set -o vi
 
 # Aliases
 
@@ -19,6 +19,7 @@ alias tls='tmux list-sessions'
 alias tks='tmux kill-session'
 alias tas='tmux a -t'
 alias lc='cl'
+alias repl='python'
 # tmux 256-colour support:
 alias tmux='tmux -2'
 
