@@ -69,7 +69,7 @@ set splitbelow " Horizontal split down by default
 set diffopt+=vertical " Veritcal diffs 
 set modelines=0 " Prevent modeline exploit
 
-set colorcolumn=80 " 80 character line marker
+set colorcolumn=120 " 120 character line marker
 set laststatus=2 " Show current filename
 set number " Enable line numbering
 " set cursorline " Highlight the current line
