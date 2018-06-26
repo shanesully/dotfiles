@@ -3,35 +3,18 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
-
-# vim keybindings
-bindkey -v
-
-# Kill 400ms ESC mode-switch lag
-export KEYTIMEOUT=1
-
+bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/$USER/.zshrc'
+zstyle :compinstall filename '/home/$USER/.zshrc'
 
-autoload -Uz compinit
+autoload -Uz compinit promptinit
+
 compinit
-# End of lines added by compinstall
+promptinit
 
-source ~/zsh-git-prompt/zshrc.sh
+prompt adam1
 
-alias ls='ls -G'
-alias cl='clear'
-alias vi='vim'
-alias py='python'
-alias py3='python3'
-alias tls='tmux list-sessions'
-alias tks='tmux kill-session'
-alias tas='tmux a -t'
-alias lc='cl'
-
-# tmux 256-colour support:
-alias tmux='tmux -2'
-
-# Use vim as the editor
-export EDITOR=vi
+# Aliases
+alias ls='ls -a --color=aut'
+alias tls='tmux list-session'
