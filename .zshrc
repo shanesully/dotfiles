@@ -20,9 +20,6 @@ compinit
 
 source ~/zsh-git-prompt/zshrc.sh
 
-# an example prompt
-PROMPT='%B%m%~%b$(git_super_status) %# '
-
 alias ls='ls -G'
 alias cl='clear'
 alias vi='vim'
@@ -36,10 +33,5 @@ alias lc='cl'
 # tmux 256-colour support:
 alias tmux='tmux -2'
 
-# git section
-alias g='git'
-alias gl='git log --graph --abbrev-commit --pretty=oneline'
-
 # Use vim as the editor
 export EDITOR=vi
-
