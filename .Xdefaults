@@ -1,0 +1,12 @@
+urxvt*font: xft:Anonymous Pro-12
+urxvt*boldFont: 
+urxvt*italicFont: 
+urxvt*bolditalicFont:
+
+urxvt*scrollBar: false
+urxvt*cursorUnderline: false
+urxvt*cursorBlink: true
+
+*.foreground:   #dceef1
+*.background:   #161719
+*.cursorColor:  #dceef1
