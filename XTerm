@@ -4,4 +4,4 @@ XTerm*metaSendsEscape: true
 Xterm*saveLines: 4096
 XTerm*background:black
 XTerm*foreground:grey
-
+XTerm*font: *-fixed-*-*-*-18-*
