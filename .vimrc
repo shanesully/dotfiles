@@ -3,9 +3,6 @@
 " Disable Vi Compatability(First and foremost)
 set nocompatible
 
-" runtimepath manager
-execute pathogen#infect()
-
 if has("autocmd")
     filetype indent plugin on " Detect filetype, auto-indent
 endif
