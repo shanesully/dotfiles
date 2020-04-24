@@ -1,22 +1,9 @@
 #! /bin/bash
-#
-# sos 
-#
 
 echo "Creating vim files..."
 
 mkdir -p .vim/autoload .vim/bundle .vim/colors .vim/.backup .vim/.swp .emacs.d
 
-echo "Installing pathogen..."
-
-curl -LSso .vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim 
-
-echo "Downloading plugins..."
-
-{
-    git clone https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
-    git clone https://github.com/tpope/vim-vividchalk.git .vim/bundle/vim-vividchalk
-} &> /dev/null
 
 echo "Symlinking colorschemes..."
 
@@ -44,4 +31,3 @@ else
 fi
 
 echo "Setup complete."
-
