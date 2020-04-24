@@ -19,3 +19,4 @@ prompt adam1
 alias ls='ls -a --color=auto'
 alias ll='ls'
 alias tls='tmux list-session'
+alias cl='clear'
