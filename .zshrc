@@ -16,5 +16,6 @@ promptinit
 prompt adam1
 
 # Aliases
-alias ls='ls -a --color=aut'
+alias ls='ls -a --color=auto'
+alias ll='ls'
 alias tls='tmux list-session'
