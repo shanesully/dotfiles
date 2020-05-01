@@ -20,3 +20,4 @@ alias ls='ls -a --color=auto'
 alias ll='ls'
 alias tls='tmux list-session'
 alias cl='clear'
+alias code="open -a Visual\ Studio\ Code.app"
