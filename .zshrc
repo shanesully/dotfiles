@@ -22,3 +22,4 @@ alias tls='tmux list-session'
 alias cl='clear'
 alias cls='cl'
 alias code="open -a Visual\ Studio\ Code.app"
+alias py='python3'
