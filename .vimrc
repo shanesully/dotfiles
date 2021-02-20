@@ -1,7 +1,21 @@
 " sos vimrc
 
+colorscheme torte
+
 " Disable Vi Compatability(First and foremost)
 set nocompatible
+
+if has("gui_running")
+    colorscheme torte
+    set guifont=Anonymous\ Pro\ 12
+
+    if exists("+lines")
+        set lines=36
+    endif
+    if exists("+columns")
+        set columns=120
+    endif
+endif
 
 if has("autocmd")
     filetype indent plugin on " Detect filetype, auto-indent
