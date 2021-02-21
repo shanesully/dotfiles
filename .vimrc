@@ -6,8 +6,14 @@ colorscheme torte
 set nocompatible
 
 if has("gui_running")
+    if has("gui_gtk2")
+        set guifont=Anonymous\ Pro\ 12
+    endif
+    if has("gui_win32")
+        set guifont=Anonymous_Pro:h12:cANSI
+    endif
+
     colorscheme torte
-    set guifont=Anonymous\ Pro\ 12
 
     if exists("+lines")
         set lines=36
