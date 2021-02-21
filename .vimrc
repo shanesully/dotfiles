@@ -74,7 +74,7 @@ let mapleader = "," " Remap leader
 set backspace=indent,eol,start " Backspace over everything
 
 set backupdir=~/.vim/backup " Backups location
-set directory=~/.vim/swp " Swapfiles location
+set directory=~/.vim/swap " Swapfiles location
 
 " Number of remembered items
 set history=1000
