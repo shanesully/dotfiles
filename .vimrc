@@ -6,11 +6,10 @@ colorscheme torte
 set nocompatible
 
 if has("gui_running")
-    if has("gui_gtk2")
-        set guifont=Anonymous\ Pro\ 12
-    endif
     if has("gui_win32")
         set guifont=Anonymous_Pro:h12:cANSI
+    else
+        set guifont=Anonymous\ Pro\ 14
     endif
 
     colorscheme torte
