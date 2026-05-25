@@ -58,3 +58,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+# local
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
