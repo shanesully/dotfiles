@@ -8,10 +8,14 @@ syntax on
 set number
 set ruler
 set cursorline
+set cursorlineopt=number
 set scrolloff=5
 set wildmenu
 set hidden
 set undofile
+
+highlight LineNr ctermfg=DarkGray
+highlight CursorLineNr ctermfg=Yellow
 
 set expandtab
 set tabstop=4
