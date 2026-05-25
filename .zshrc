@@ -39,7 +39,6 @@ alias l='ls -CF'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cls='clear'
-alias grep='grep --color=auto'
 
 alias gs='git status'
 alias ga='git add'
@@ -51,3 +50,11 @@ alias gl='git pull'
 alias gco='git checkout'
 alias gb='git branch'
 alias gll='git log --oneline --graph --decorate --all'
+
+# tools
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"

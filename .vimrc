@@ -1,21 +1,20 @@
 set nocompatible
 set encoding=utf-8
-set fileencoding=utf-8
 
 filetype plugin indent on
 syntax on
 
 set number
-set ruler
 set cursorline
 set cursorlineopt=number
+set guicursor=a:ver25-blinkon500-blinkoff500
 set scrolloff=5
 set wildmenu
 set hidden
 set undofile
 
 highlight LineNr ctermfg=DarkGray
-highlight CursorLineNr ctermfg=Yellow
+highlight CursorLineNr cterm=NONE ctermfg=Yellow
 
 set expandtab
 set tabstop=4
@@ -35,7 +34,7 @@ set smartcase
 set splitbelow
 set splitright
 
-" use system clipboard when available
+" system clipboard
 if has('clipboard')
   set clipboard=unnamedplus
 endif
